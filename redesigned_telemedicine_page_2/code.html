@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>TrustNet Health+ Telemedicine</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#4A90E2", // Blue
+                        secondary: "#50E3C2", // Teal/Green
+                        'background-light': '#F8F9FA', // Off-white
+                        'text-dark': '#333333',
+                        'text-light': '#777777',
+                        'border-light': '#E0E0E0'
+                    },
+                    fontFamily: {
+                        display: ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem", // increased default for a softer look
+                        "lg": "0.75rem",
+                        "xl": "1rem",
+                        "full": "9999px"
+                    },
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            font-size: 24px;
+        }
+        .active-chip {
+            background-color: #4A90E2;
+            color: white;
+        }
+        .active-chip .material-symbols-outlined {
+            color: white;
+        }
+        .active-bottom-nav-item, .active-bottom-nav-item .material-symbols-outlined {
+            color: #4A90E2 !important;
+        }
+        .active-bottom-nav-item .material-symbols-outlined {
+            font-variation-settings: 'FILL' 1;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col bg-background-light group/design-root overflow-x-hidden">
+<main class="flex-1 pb-24">
+<div class="flex items-center bg-background-light p-4 justify-between sticky top-0 z-10">
+<span class="material-symbols-outlined text-text-dark flex size-12 shrink-0 items-center justify-center">arrow_back</span>
+<h2 class="text-text-dark text-xl font-bold leading-tight tracking-tight flex-1 text-center">Find a Doctor</h2>
+<div class="size-12 shrink-0"></div> 
+</div>
+<div class="px-4 py-3">
+<div class="flex items-center gap-3">
+<label class="flex flex-col min-w-40 h-14 w-full">
+<div class="flex w-full flex-1 items-stretch rounded-xl h-full shadow-sm">
+<div class="text-text-light flex border-none bg-white items-center justify-center pl-4 rounded-l-xl border-r-0">
+<span class="material-symbols-outlined">search</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-text-dark focus:outline-0 focus:ring-2 focus:ring-primary/50 border-none bg-white h-full placeholder:text-text-light px-4 rounded-l-none border-l-0 pl-2 text-base font-normal leading-normal" placeholder="Search by name or specialty..." value=""/>
+</div>
+</label>
+<button class="flex size-14 shrink-0 cursor-pointer items-center justify-center overflow-hidden rounded-xl bg-white text-text-light shadow-sm">
+<span class="material-symbols-outlined">tune</span>
+</button>
+</div>
+</div>
+<div class="flex gap-3 px-4 py-2 overflow-x-auto whitespace-nowrap" style="scrollbar-width: none; -ms-overflow-style: none;">
+<div class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full px-4 active-chip">
+<p class="text-sm font-medium leading-normal">General</p>
+</div>
+<div class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full bg-white px-4">
+<p class="text-text-dark text-sm font-medium leading-normal">Pediatrics</p>
+</div>
+<div class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full bg-white px-4">
+<p class="text-text-dark text-sm font-medium leading-normal">Dermatology</p>
+</div>
+<div class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full bg-white px-4">
+<p class="text-text-dark text-sm font-medium leading-normal">Dentist</p>
+</div>
+<div class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full bg-white px-4">
+<p class="text-text-dark text-sm font-medium leading-normal">Cardiology</p>
+</div>
+</div>
+<div class="flex flex-col gap-4 p-4">
+<div class="flex items-start justify-between gap-4 rounded-xl bg-white p-4 shadow-md">
+<div class="w-16 h-16 bg-center bg-no-repeat bg-cover rounded-full shrink-0" data-alt="Professional headshot of Dr. Evelyn Reed" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAwZP4-Q7oovf8OhW4hUGzBC8JRUAVe_Ti1t_YzK9J5ff8Rh_z1KI7QTNoCk5zxZEa9QrXxn-UCwr1Vjoo0v0i956RC2qxjzBXn69785PxdA5jy-XMQVwRslgitncTYrXZMoExZd40MZDQQWkMbrLcfUjPJQC5D-sDpoeq2LZxomeTWcW1-kloshmDCh-bIDFemaV3cmrcVrxEhQjg0hp4QG3K5ky_kmd_P3UNHUVsc-bUom8BeT7Hzi2URQ2CuNbq3QhBjlCQl0ZA");'></div>
+<div class="flex flex-1 flex-col gap-3">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<span class="relative flex h-2.5 w-2.5">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-secondary"></span>
+</span>
+<p class="text-secondary text-sm font-medium leading-normal">Online Now</p>
+</div>
+<p class="text-text-dark text-lg font-bold leading-tight">Dr. Evelyn Reed</p>
+<p class="text-text-light text-sm font-normal leading-normal">Dermatologist</p>
+</div>
+<div class="flex items-center gap-3 text-text-light">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined !text-base text-yellow-500">star</span>
+<span class="text-sm">4.9</span>
+</div>
+<span class="text-gray-300">|</span>
+<span class="text-sm">12+ years exp.</span>
+</div>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal w-full mt-1">
+<span>Consult Now</span>
+</button>
+</div>
+</div>
+<div class="flex items-start justify-between gap-4 rounded-xl bg-white p-4 shadow-md">
+<div class="w-16 h-16 bg-center bg-no-repeat bg-cover rounded-full shrink-0" data-alt="Professional headshot of Dr. Marcus Chen" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDMfZGye2VQTJ4JDlpdgXf9kou-T5tFKLDjStOhj2t8IaBptmm85XN3tSxVRCziu1ojwN8f4E7bh7RtYrKxY-6IPr83l0jaugJ7ium1YCbD7wpGAJ9K2FHAKsqGyagSgBkyXy_XobMQByWsSIrdriFRULlc_KBEmbUtCZ00TDZ4ri-QVlpcBTYAl0RwZUfieneNRQeB0yAHyfqT5XfThbsyyGaXIALG1qJRDKQBUp7Lv-LRIFqScM-DsVcDSFkaxtsGEyHhQZblIJw");'></div>
+<div class="flex flex-1 flex-col gap-3">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2 text-text-light">
+<span class="material-symbols-outlined !text-lg">schedule</span>
+<p class="text-sm font-medium leading-normal">Next Available: 3 PM</p>
+</div>
+<p class="text-text-dark text-lg font-bold leading-tight">Dr. Marcus Chen</p>
+<p class="text-text-light text-sm font-normal leading-normal">General Physician</p>
+</div>
+<div class="flex items-center gap-3 text-text-light">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined !text-base text-yellow-500">star</span>
+<span class="text-sm">4.8</span>
+</div>
+<span class="text-gray-300">|</span>
+<span class="text-sm">8+ years exp.</span>
+</div>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary/20 text-primary text-sm font-bold leading-normal w-full mt-1">
+<span>Book Appointment</span>
+</button>
+</div>
+</div>
+<div class="flex items-start justify-between gap-4 rounded-xl bg-white p-4 shadow-md">
+<div class="w-16 h-16 bg-center bg-no-repeat bg-cover rounded-full shrink-0" data-alt="Professional headshot of Dr. Sofia Alvarez" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDEifXIr1GkUkECjd40e1u7psmnZDu1vh4tTvCRX-ULQvANZvtLNOGotWSicFCxjGnOhi6LSn9STDWuTziGeWCP8j0fyHauQZaMDbcRBAdHnPzjBBUvF1hck6JQ1-FnpQ90IsfrUYj5HSLCh9U-3bakLpgM5lDFb_QPKdn0ohOr71-QSCdhJayAhRw1iLxNHBL-7I-SX2GApyiF9eI4CATwo73KyUFzlYZvWxBie7GnvHZhvlgICMNo7RII3pgFbh3yLm849DdtbC8");'></div>
+<div class="flex flex-1 flex-col gap-3">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<span class="relative flex h-2.5 w-2.5">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-secondary"></span>
+</span>
+<p class="text-secondary text-sm font-medium leading-normal">Online Now</p>
+</div>
+<p class="text-text-dark text-lg font-bold leading-tight">Dr. Sofia Alvarez</p>
+<p class="text-text-light text-sm font-normal leading-normal">Pediatrician</p>
+</div>
+<div class="flex items-center gap-3 text-text-light">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined !text-base text-yellow-500">star</span>
+<span class="text-sm">5.0</span>
+</div>
+<span class="text-gray-300">|</span>
+<span class="text-sm">15+ years exp.</span>
+</div>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal w-full mt-1">
+<span>Consult Now</span>
+</button>
+</div>
+</div>
+</div>
+</main>
+<nav class="fixed bottom-0 left-0 right-0 z-10 flex h-20 items-center justify-around bg-white border-t border-border-light shadow-[0_-2px_10px_rgba(0,0,0,0.05)]">
+<a class="flex w-full flex-col items-center justify-center text-text-light" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="text-xs font-medium">Home</span>
+</a>
+<a class="flex w-full flex-col items-center justify-center text-text-light" href="#">
+<span class="material-symbols-outlined">health_and_safety</span>
+<span class="text-xs font-medium">Health Hub</span>
+</a>
+<a class="flex w-full flex-col items-center justify-center text-text-light" href="#">
+<span class="material-symbols-outlined">maps_home_work</span>
+<span class="text-xs font-medium">Facilities</span>
+</a>
+<a class="flex w-full flex-col items-center justify-center active-bottom-nav-item" href="#">
+<span class="material-symbols-outlined">video_chat</span>
+<span class="text-xs font-bold">Telemedicine</span>
+</a>
+<a class="flex w-full flex-col items-center justify-center text-text-light" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="text-xs font-medium">Profile</span>
+</a>
+</nav>
+</div>
+
+</body></html>

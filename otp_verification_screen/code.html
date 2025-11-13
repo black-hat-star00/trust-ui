@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>TrustNet Health+ Verification</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+    @layer base {
+      input[type="number"]::-webkit-inner-spin-button,
+      input[type="number"]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+    }
+  </style>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#2E8B57",
+            "background-light": "#F8F9FA",
+            "background-dark": "#102210",
+            "text-light": "#333333",
+            "text-dark": "#E0E0E0",
+            "text-secondary-light": "#6c757d",
+            "text-secondary-dark": "#A0A0A0",
+          },
+          fontFamily: {
+            "display": ["Inter", "sans-serif"]
+          },
+          borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+        },
+      },
+    }
+  </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex min-h-screen w-full flex-col text-text-light dark:text-text-dark">
+<header class="flex h-16 items-center px-4">
+<button class="flex size-10 shrink-0 items-center justify-center rounded-full transition-colors hover:bg-black/10 dark:hover:bg-white/10">
+<span class="material-symbols-outlined text-2xl text-text-light dark:text-text-dark">arrow_back</span>
+</button>
+<h1 class="flex-1 text-center text-lg font-bold tracking-tight">Verify Your Identity</h1>
+<div class="size-10 shrink-0"></div> <!-- Spacer for balance -->
+</header>
+<main class="flex flex-1 flex-col items-center px-4 pt-12 text-center">
+<h2 class="text-[32px] font-bold leading-tight tracking-tight text-text-light dark:text-text-dark">Enter Verification Code</h2>
+<p class="mt-2 max-w-sm text-base text-text-secondary-light dark:text-text-secondary-dark">We've sent a 6-digit code to your email. Please enter it below to continue.</p>
+<div class="flex w-full max-w-sm justify-center py-8">
+<fieldset class="relative flex gap-2 md:gap-3">
+<input class="h-14 w-12 rounded-lg border border-gray-300 dark:border-gray-600 bg-background-light dark:bg-background-dark text-center text-2xl font-bold [appearance:textfield] text-text-light dark:text-text-dark focus:border-primary focus:ring-2 focus:ring-primary/50 [&amp;::-webkit-inner-spin-button]:appearance-none [&amp;::-webkit-outer-spin-button]:appearance-none" maxlength="1" type="number"/>
+<input class="h-14 w-12 rounded-lg border border-gray-300 dark:border-gray-600 bg-background-light dark:bg-background-dark text-center text-2xl font-bold [appearance:textfield] text-text-light dark:text-text-dark focus:border-primary focus:ring-2 focus:ring-primary/50 [&amp;::-webkit-inner-spin-button]:appearance-none [&amp;::-webkit-outer-spin-button]:appearance-none" maxlength="1" type="number"/>
+<input class="h-14 w-12 rounded-lg border border-gray-300 dark:border-gray-600 bg-background-light dark:bg-background-dark text-center text-2xl font-bold [appearance:textfield] text-text-light dark:text-text-dark focus:border-primary focus:ring-2 focus:ring-primary/50 [&amp;::-webkit-inner-spin-button]:appearance-none [&amp;::-webkit-outer-spin-button]:appearance-none" maxlength="1" type="number"/>
+<input class="h-14 w-12 rounded-lg border border-gray-300 dark:border-gray-600 bg-background-light dark:bg-background-dark text-center text-2xl font-bold [appearance:textfield] text-text-light dark:text-text-dark focus:border-primary focus:ring-2 focus:ring-primary/50 [&amp;::-webkit-inner-spin-button]:appearance-none [&amp;::-webkit-outer-spin-button]:appearance-none" maxlength="1" type="number"/>
+<input class="h-14 w-12 rounded-lg border border-gray-300 dark:border-gray-600 bg-background-light dark:bg-background-dark text-center text-2xl font-bold [appearance:textfield] text-text-light dark:text-text-dark focus:border-primary focus:ring-2 focus:ring-primary/50 [&amp;::-webkit-inner-spin-button]:appearance-none [&amp;::-webkit-outer-spin-button]:appearance-none" maxlength="1" type="number"/>
+<input class="h-14 w-12 rounded-lg border border-gray-300 dark:border-gray-600 bg-background-light dark:bg-background-dark text-center text-2xl font-bold [appearance:textfield] text-text-light dark:text-text-dark focus:border-primary focus:ring-2 focus:ring-primary/50 [&amp;::-webkit-inner-spin-button]:appearance-none [&amp;::-webkit-outer-spin-button]:appearance-none" maxlength="1" type="number"/>
+</fieldset>
+</div>
+<div class="mt-2 text-center text-sm text-text-secondary-light dark:text-text-secondary-dark">
+<span>Didn't receive a code? </span>
+<button class="font-bold text-primary transition-colors hover:text-primary/80">Resend</button>
+<span>in 00:59</span>
+</div>
+</main>
+<footer class="p-4 sm:p-6">
+<button class="h-14 w-full rounded-full bg-primary text-lg font-bold text-white transition-colors hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 dark:focus:ring-offset-background-dark">Verify</button>
+</footer>
+</div>
+</body></html>

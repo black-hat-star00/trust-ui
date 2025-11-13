@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>TrustNet Health+ Dashboard</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#36e236",
+                        "background-light": "#f6f8f6",
+                        "background-dark": "#112111",
+                        "teal": "#008080",
+                        "coral": "#FF7F50",
+                        "light-gray": "#F4F6F8",
+                        "text-light": "#112111",
+                        "text-dark": "#f6f8f6",
+                        "text-muted-light": "#556655",
+                        "text-muted-dark": "#aabbaa",
+                        "card-light": "#ffffff",
+                        "card-dark": "#1a2c1a",
+                        "border-light": "#e0e6e0",
+                        "border-dark": "#2a3c2a",
+                    },
+                    fontFamily: {
+                        "display": ["Lexend", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<!-- Top App Bar -->
+<div class="flex items-center p-4 pb-2 justify-between sticky top-0 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm z-10">
+<button class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full text-text-light dark:text-text-dark">
+<span class="material-symbols-outlined text-2xl">menu</span>
+</button>
+<h2 class="text-text-light dark:text-text-dark text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">Good Morning, Sarah</h2>
+<button class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full text-text-light dark:text-text-dark">
+<span class="material-symbols-outlined text-2xl">notifications</span>
+</button>
+</div>
+<main class="flex-1 px-4 pb-32">
+<!-- Daily Health Summary Card -->
+<div class="mt-4">
+<h3 class="text-text-light dark:text-text-dark text-xl font-bold leading-tight tracking-[-0.015em] px-0 pb-3 pt-4">Your Daily Summary</h3>
+<div class="relative flex cursor-pointer flex-col gap-6 rounded-xl bg-gradient-to-br from-teal/10 to-transparent p-6 shadow-sm border border-border-light dark:border-border-dark bg-card-light dark:bg-card-dark">
+<div class="grid grid-cols-2 gap-6">
+<!-- Steps -->
+<div class="flex items-center gap-4">
+<div class="relative h-16 w-16">
+<svg class="h-full w-full -rotate-90" viewbox="0 0 36 36">
+<circle class="stroke-current text-gray-200 dark:text-gray-700" cx="18" cy="18" fill="none" r="16" stroke-width="2"></circle>
+<circle class="stroke-current text-coral" cx="18" cy="18" fill="none" r="16" stroke-dasharray="100" stroke-dashoffset="35" stroke-linecap="round" stroke-width="2"></circle>
+</svg>
+<div class="absolute inset-0 flex items-center justify-center">
+<span class="material-symbols-outlined text-coral text-2xl">footprint</span>
+</div>
+</div>
+<div>
+<p class="text-sm font-medium text-text-muted-light dark:text-text-muted-dark">Steps</p>
+<p class="text-xl font-bold text-text-light dark:text-text-dark">6,540</p>
+</div>
+</div>
+<!-- Heart Rate -->
+<div class="flex items-center gap-4">
+<div class="relative h-16 w-16">
+<svg class="h-full w-full -rotate-90" viewbox="0 0 36 36">
+<circle class="stroke-current text-gray-200 dark:text-gray-700" cx="18" cy="18" fill="none" r="16" stroke-width="2"></circle>
+<circle class="stroke-current text-teal" cx="18" cy="18" fill="none" r="16" stroke-dasharray="100" stroke-dashoffset="60" stroke-linecap="round" stroke-width="2"></circle>
+</svg>
+<div class="absolute inset-0 flex items-center justify-center">
+<span class="material-symbols-outlined text-teal text-2xl">monitor_heart</span>
+</div>
+</div>
+<div>
+<p class="text-sm font-medium text-text-muted-light dark:text-text-muted-dark">Heart Rate</p>
+<p class="text-xl font-bold text-text-light dark:text-text-dark">72 bpm</p>
+</div>
+</div>
+<!-- Sleep -->
+<div class="flex items-center gap-4">
+<div class="relative h-16 w-16">
+<svg class="h-full w-full -rotate-90" viewbox="0 0 36 36">
+<circle class="stroke-current text-gray-200 dark:text-gray-700" cx="18" cy="18" fill="none" r="16" stroke-width="2"></circle>
+<circle class="stroke-current text-coral" cx="18" cy="18" fill="none" r="16" stroke-dasharray="100" stroke-dashoffset="20" stroke-linecap="round" stroke-width="2"></circle>
+</svg>
+<div class="absolute inset-0 flex items-center justify-center">
+<span class="material-symbols-outlined text-coral text-2xl">sleep</span>
+</div>
+</div>
+<div>
+<p class="text-sm font-medium text-text-muted-light dark:text-text-muted-dark">Sleep</p>
+<p class="text-xl font-bold text-text-light dark:text-text-dark">7h 30m</p>
+</div>
+</div>
+<!-- Water -->
+<div class="flex items-center gap-4">
+<div class="relative h-16 w-16">
+<svg class="h-full w-full -rotate-90" viewbox="0 0 36 36">
+<circle class="stroke-current text-gray-200 dark:text-gray-700" cx="18" cy="18" fill="none" r="16" stroke-width="2"></circle>
+<circle class="stroke-current text-teal" cx="18" cy="18" fill="none" r="16" stroke-dasharray="100" stroke-dashoffset="25" stroke-linecap="round" stroke-width="2"></circle>
+</svg>
+<div class="absolute inset-0 flex items-center justify-center">
+<span class="material-symbols-outlined text-teal text-2xl">water_drop</span>
+</div>
+</div>
+<div>
+<p class="text-sm font-medium text-text-muted-light dark:text-text-muted-dark">Water</p>
+<p class="text-xl font-bold text-text-light dark:text-text-dark">6 glasses</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Quick Actions -->
+<div class="mt-6">
+<h3 class="text-text-light dark:text-text-dark text-xl font-bold leading-tight tracking-[-0.015em] px-0 pb-3 pt-4">Quick Actions</h3>
+<div class="grid grid-cols-[repeat(auto-fit,minmax(150px,1fr))] gap-3">
+<div class="flex flex-1 flex-col gap-3 rounded-lg border border-border-light dark:border-border-dark bg-card-light dark:bg-card-dark p-4">
+<span class="material-symbols-outlined text-teal text-2xl">add_chart</span>
+<div class="flex flex-col gap-1">
+<h2 class="text-base font-bold leading-tight text-text-light dark:text-text-dark">Log Vitals</h2>
+<p class="text-sm font-normal leading-normal text-text-muted-light dark:text-text-muted-dark">Record your data</p>
+</div>
+</div>
+<div class="flex flex-1 flex-col gap-3 rounded-lg border border-border-light dark:border-border-dark bg-card-light dark:bg-card-dark p-4">
+<span class="material-symbols-outlined text-teal text-2xl">pin_drop</span>
+<div class="flex flex-col gap-1">
+<h2 class="text-base font-bold leading-tight text-text-light dark:text-text-dark">Find Care</h2>
+<p class="text-sm font-normal leading-normal text-text-muted-light dark:text-text-muted-dark">Nearby clinics</p>
+</div>
+</div>
+<div class="flex flex-1 flex-col gap-3 rounded-lg border border-border-light dark:border-border-dark bg-card-light dark:bg-card-dark p-4">
+<span class="material-symbols-outlined text-teal text-2xl">article</span>
+<div class="flex flex-col gap-1">
+<h2 class="text-base font-bold leading-tight text-text-light dark:text-text-dark">View Reports</h2>
+<p class="text-sm font-normal leading-normal text-text-muted-light dark:text-text-muted-dark">See your results</p>
+</div>
+</div>
+<div class="flex flex-1 flex-col gap-3 rounded-lg border border-border-light dark:border-border-dark bg-card-light dark:bg-card-dark p-4">
+<span class="material-symbols-outlined text-teal text-2xl">chat</span>
+<div class="flex flex-col gap-1">
+<h2 class="text-base font-bold leading-tight text-text-light dark:text-text-dark">Message Doctor</h2>
+<p class="text-sm font-normal leading-normal text-text-muted-light dark:text-text-muted-dark">Contact provider</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Today's Plan -->
+<div class="mt-6">
+<h3 class="text-text-light dark:text-text-dark text-xl font-bold leading-tight tracking-[-0.015em] px-0 pb-3 pt-4">Today's Plan</h3>
+<div class="flex flex-col gap-3">
+<!-- Medication Item -->
+<div class="flex items-center gap-4 rounded-lg border border-border-light dark:border-border-dark bg-card-light dark:bg-card-dark p-4">
+<div class="flex h-12 w-12 items-center justify-center rounded-full bg-teal/10">
+<span class="material-symbols-outlined text-teal text-2xl">medication</span>
+</div>
+<div class="flex-1">
+<p class="font-bold text-text-light dark:text-text-dark">Metformin</p>
+<p class="text-sm text-text-muted-light dark:text-text-muted-dark">8:00 AM</p>
+</div>
+<button class="rounded-full bg-teal/20 px-4 py-1.5 text-sm font-medium text-teal">Taken</button>
+</div>
+<!-- Appointment Item -->
+<div class="flex items-center gap-4 rounded-lg border border-border-light dark:border-border-dark bg-card-light dark:bg-card-dark p-4">
+<div class="flex h-12 w-12 items-center justify-center rounded-full bg-coral/10">
+<span class="material-symbols-outlined text-coral text-2xl">event</span>
+</div>
+<div class="flex-1">
+<p class="font-bold text-text-light dark:text-text-dark">Cardiologist Check-up</p>
+<p class="text-sm text-text-muted-light dark:text-text-muted-dark">2:30 PM</p>
+</div>
+<span class="material-symbols-outlined text-text-muted-light dark:text-text-muted-dark">chevron_right</span>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer with SOS Button -->
+<footer class="fixed bottom-0 left-0 right-0 z-10 border-t border-border-light dark:border-border-dark bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+<div class="mx-auto flex h-24 max-w-md items-center justify-around px-4">
+<button class="flex flex-col items-center gap-1 text-teal">
+<span class="material-symbols-outlined text-2xl">home</span>
+<span class="text-xs font-bold">Home</span>
+</button>
+<button class="flex flex-col items-center gap-1 text-text-muted-light dark:text-text-muted-dark">
+<span class="material-symbols-outlined text-2xl">history</span>
+<span class="text-xs">History</span>
+</button>
+<div class="relative -mt-16">
+<button class="flex h-16 w-16 items-center justify-center rounded-full bg-coral text-white shadow-lg shadow-coral/30">
+<span class="text-xl font-bold">SOS</span>
+</button>
+</div>
+<button class="flex flex-col items-center gap-1 text-text-muted-light dark:text-text-muted-dark">
+<span class="material-symbols-outlined text-2xl">medical_services</span>
+<span class="text-xs">Care</span>
+</button>
+<button class="flex flex-col items-center gap-1 text-text-muted-light dark:text-text-muted-dark">
+<span class="material-symbols-outlined text-2xl">person</span>
+<span class="text-xs">Profile</span>
+</button>
+</div>
+</footer>
+</div>
+</body></html>

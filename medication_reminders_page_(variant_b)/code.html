@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Medication Reminders</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#007A7A", /* Calming Teal */
+                        "background-light": "#f6f8f6",
+                        "background-dark": "#102210",
+                        "text-light": "#111811",
+                        "text-dark": "#E0E0E0",
+                        "card-light": "#FFFFFF",
+                        "card-dark": "#1A2E1A",
+                        "subtle-light": "#f0f4f0",
+                        "subtle-dark": "#253C25",
+                        "secondary-text-light": "#618961",
+                        "secondary-text-dark": "#A0BBA0",
+                        "taken-light": "#34D399",
+                        "taken-dark": "#10B981",
+                        "missed-light": "#FBBF24",
+                        "missed-dark": "#F59E0B",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden" style="--checkbox-tick-svg: url('data:image/svg+xml,%3csvg viewBox=%270 0 16 16%27 fill=%27%23ffffff%27 xmlns=%27http://www.w3.org/2000/svg%27%3e%3cpath d=%27M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z%27/%3e%3c/svg%3e');">
+<!-- Top App Bar -->
+<header class="flex items-center bg-card-light dark:bg-card-dark p-4 pb-2 justify-between sticky top-0 z-10 border-b border-subtle-light dark:border-subtle-dark">
+<div class="flex size-12 shrink-0 items-center justify-start">
+<span class="material-symbols-outlined text-text-light dark:text-text-dark">arrow_back</span>
+</div>
+<h1 class="text-text-light dark:text-text-dark text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">Medication Reminders</h1>
+<div class="flex w-12 items-center justify-end">
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-12 bg-transparent text-text-light dark:text-text-dark gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0">
+<span class="material-symbols-outlined">add</span>
+</button>
+</div>
+</header>
+<!-- Date Selector Chips -->
+<nav class="p-4 bg-card-light dark:bg-card-dark">
+<div class="flex gap-3 overflow-x-auto pb-2 -mx-4 px-4">
+<div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-subtle-light dark:bg-subtle-dark px-4">
+<p class="text-text-light dark:text-text-dark text-sm font-medium leading-normal">Mon, 21</p>
+</div>
+<div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-primary px-4">
+<p class="text-white text-sm font-medium leading-normal">Today</p>
+</div>
+<div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-subtle-light dark:bg-subtle-dark px-4">
+<p class="text-text-light dark:text-text-dark text-sm font-medium leading-normal">Wed, 23</p>
+</div>
+<div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-subtle-light dark:bg-subtle-dark px-4">
+<p class="text-text-light dark:text-text-dark text-sm font-medium leading-normal">Thu, 24</p>
+</div>
+<div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-subtle-light dark:bg-subtle-dark px-4">
+<p class="text-text-light dark:text-text-dark text-sm font-medium leading-normal">Fri, 25</p>
+</div>
+</div>
+</nav>
+<main class="flex-1 px-4">
+<!-- Morning Section -->
+<section>
+<h2 class="text-text-light dark:text-text-dark text-[22px] font-bold leading-tight tracking-[-0.015em] pt-5 pb-3">Morning (8:00 AM)</h2>
+<div class="space-y-3">
+<!-- Medication Card 1: Taken -->
+<div class="flex gap-4 bg-card-light dark:bg-card-dark p-4 justify-between rounded-xl opacity-60">
+<div class="flex items-start gap-4">
+<div class="text-text-light dark:text-text-dark flex items-center justify-center rounded-lg bg-subtle-light dark:bg-subtle-dark shrink-0 size-12">
+<span class="material-symbols-outlined">pill</span>
+</div>
+<div class="flex flex-1 flex-col justify-center">
+<p class="text-text-light dark:text-text-dark text-base font-medium leading-normal line-through">Lisinopril 10mg</p>
+<p class="text-secondary-text-light dark:text-secondary-text-dark text-sm font-normal leading-normal">After food</p>
+<p class="text-secondary-text-light dark:text-secondary-text-dark text-sm font-normal leading-normal">1 tablet</p>
+</div>
+</div>
+<div class="shrink-0">
+<div class="flex size-7 items-center justify-center">
+<input checked="" class="h-5 w-5 rounded border-[#dbe6db] dark:border-secondary-text-dark border-2 bg-transparent text-primary checked:bg-primary checked:border-primary checked:bg-[image:--checkbox-tick-svg] focus:ring-0 focus:ring-offset-0 focus:border-[#dbe6db] dark:focus:border-secondary-text-dark focus:outline-none" type="checkbox"/>
+</div>
+</div>
+</div>
+<!-- Medication Card 2: Upcoming -->
+<div class="flex gap-4 bg-card-light dark:bg-card-dark p-4 justify-between rounded-xl">
+<div class="flex items-start gap-4">
+<div class="text-text-light dark:text-text-dark flex items-center justify-center rounded-lg bg-subtle-light dark:bg-subtle-dark shrink-0 size-12">
+<span class="material-symbols-outlined">medication</span>
+</div>
+<div class="flex flex-1 flex-col justify-center">
+<p class="text-text-light dark:text-text-dark text-base font-medium leading-normal">Metformin 500mg</p>
+<p class="text-secondary-text-light dark:text-secondary-text-dark text-sm font-normal leading-normal">With breakfast</p>
+<p class="text-secondary-text-light dark:text-secondary-text-dark text-sm font-normal leading-normal">1 tablet</p>
+</div>
+</div>
+<div class="shrink-0">
+<div class="flex size-7 items-center justify-center">
+<input class="h-5 w-5 rounded border-[#dbe6db] dark:border-secondary-text-dark border-2 bg-transparent text-primary checked:bg-primary checked:border-primary checked:bg-[image:--checkbox-tick-svg] focus:ring-0 focus:ring-offset-0 focus:border-[#dbe6db] dark:focus:border-secondary-text-dark focus:outline-none" type="checkbox"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Afternoon Section -->
+<section>
+<h2 class="text-text-light dark:text-text-dark text-[22px] font-bold leading-tight tracking-[-0.015em] pt-8 pb-3">Afternoon (1:00 PM)</h2>
+<div class="space-y-3">
+<!-- Medication Card 3: Missed -->
+<div class="flex gap-4 bg-card-light dark:bg-card-dark p-4 justify-between rounded-xl border-l-4 border-missed-light dark:border-missed-dark">
+<div class="flex items-start gap-4">
+<div class="text-text-light dark:text-text-dark flex items-center justify-center rounded-lg bg-missed-light/20 dark:bg-missed-dark/20 shrink-0 size-12">
+<span class="material-symbols-outlined text-missed-light dark:text-missed-dark">vaccines</span>
+</div>
+<div class="flex flex-1 flex-col justify-center">
+<p class="text-text-light dark:text-text-dark text-base font-medium leading-normal">Vitamin D3</p>
+<p class="text-secondary-text-light dark:text-secondary-text-dark text-sm font-normal leading-normal">With lunch</p>
+<p class="text-missed-light dark:text-missed-dark text-sm font-medium leading-normal">Missed</p>
+</div>
+</div>
+<div class="shrink-0">
+<div class="flex size-7 items-center justify-center">
+<input class="h-5 w-5 rounded border-[#dbe6db] dark:border-secondary-text-dark border-2 bg-transparent text-primary checked:bg-primary checked:border-primary checked:bg-[image:--checkbox-tick-svg] focus:ring-0 focus:ring-offset-0 focus:border-[#dbe6db] dark:focus:border-secondary-text-dark focus:outline-none" type="checkbox"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Evening Section -->
+<section>
+<h2 class="text-text-light dark:text-text-dark text-[22px] font-bold leading-tight tracking-[-0.015em] pt-8 pb-3">Evening (9:00 PM)</h2>
+<div class="space-y-3">
+<!-- Medication Card 4: Upcoming -->
+<div class="flex gap-4 bg-card-light dark:bg-card-dark p-4 justify-between rounded-xl">
+<div class="flex items-start gap-4">
+<div class="text-text-light dark:text-text-dark flex items-center justify-center rounded-lg bg-subtle-light dark:bg-subtle-dark shrink-0 size-12">
+<span class="material-symbols-outlined">pill</span>
+</div>
+<div class="flex flex-1 flex-col justify-center">
+<p class="text-text-light dark:text-text-dark text-base font-medium leading-normal">Atorvastatin 20mg</p>
+<p class="text-secondary-text-light dark:text-secondary-text-dark text-sm font-normal leading-normal">Before bed</p>
+<p class="text-secondary-text-light dark:text-secondary-text-dark text-sm font-normal leading-normal">1 tablet</p>
+</div>
+</div>
+<div class="shrink-0">
+<div class="flex size-7 items-center justify-center">
+<input class="h-5 w-5 rounded border-[#dbe6db] dark:border-secondary-text-dark border-2 bg-transparent text-primary checked:bg-primary checked:border-primary checked:bg-[image:--checkbox-tick-svg] focus:ring-0 focus:ring-offset-0 focus:border-[#dbe6db] dark:focus:border-secondary-text-dark focus:outline-none" type="checkbox"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Empty State Example (for a different day) -->
+<section class="text-center py-16 px-4">
+<div class="flex justify-center items-center mx-auto size-16 rounded-full bg-subtle-light dark:bg-subtle-dark mb-4">
+<span class="material-symbols-outlined text-primary text-3xl">event_available</span>
+</div>
+<h3 class="text-lg font-semibold text-text-light dark:text-text-dark">All Clear!</h3>
+<p class="text-secondary-text-light dark:text-secondary-text-dark mt-1">No medications scheduled for today. Enjoy your day!</p>
+</section>
+</main>
+</div>
+</body></html>

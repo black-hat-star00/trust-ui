@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Help &amp; Support - TrustNet Health+</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#4A90E2",
+                        "secondary": "#50E3C2",
+                        "background-light": "#F8F9FA",
+                        "background-dark": "#111621",
+                        "text-light-primary": "#212529",
+                        "text-dark-primary": "#F8F9FA",
+                        "text-light-secondary": "#6C757D",
+                        "text-dark-secondary": "#adb5bd",
+                        "border-light": "#dee2e6",
+                        "border-dark": "#495057"
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "0.75rem",
+                        "xl": "1rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            font-size: 24px;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<!-- Top App Bar -->
+<div class="sticky top-0 z-10 flex items-center bg-background-light dark:bg-background-dark p-4 pb-2 justify-between border-b border-border-light dark:border-border-dark">
+<button class="text-text-light-primary dark:text-text-dark-primary flex size-10 shrink-0 items-center justify-center rounded-full hover:bg-black/5 dark:hover:bg-white/5 transition-colors">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<h1 class="text-text-light-primary dark:text-text-dark-primary text-lg font-bold leading-tight tracking-tight flex-1 text-center">Help &amp; Support</h1>
+<div class="w-10"></div> <!-- Spacer for centering title -->
+</div>
+<main class="flex-1 pb-10">
+<!-- Search Bar -->
+<div class="px-4 py-4">
+<label class="flex flex-col min-w-40 h-12 w-full">
+<div class="flex w-full flex-1 items-stretch rounded-lg h-full bg-white dark:bg-zinc-800 shadow-sm border border-border-light dark:border-border-dark">
+<div class="text-text-light-secondary dark:text-text-dark-secondary flex items-center justify-center pl-4">
+<span class="material-symbols-outlined">search</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden text-text-light-primary dark:text-text-dark-primary focus:outline-0 focus:ring-0 border-none bg-transparent h-full placeholder:text-text-light-secondary dark:placeholder:text-text-dark-secondary px-2 text-base font-normal leading-normal" placeholder="Search for help..." value=""/>
+</div>
+</label>
+</div>
+<!-- Frequently Asked Questions Section -->
+<section class="mt-4">
+<h2 class="text-text-light-primary dark:text-text-dark-primary text-xl font-bold leading-tight tracking-tight px-4 pb-3">Frequently Asked Questions</h2>
+<div class="flex flex-col px-4 gap-3">
+<details class="flex flex-col rounded-lg border border-border-light dark:border-border-dark bg-white dark:bg-zinc-800 px-[15px] group">
+<summary class="flex cursor-pointer items-center justify-between gap-4 py-3">
+<p class="text-text-light-primary dark:text-text-dark-primary text-sm font-medium leading-normal">How do I update my profile?</p>
+<span class="material-symbols-outlined text-text-light-secondary dark:text-text-dark-secondary group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<p class="text-text-light-secondary dark:text-text-dark-secondary text-sm font-normal leading-normal pb-3">
+                            To update your profile, go to the 'Profile' tab, tap on the 'Edit Profile' button, make your desired changes, and then tap 'Save'.
+                        </p>
+</details>
+<details class="flex flex-col rounded-lg border border-border-light dark:border-border-dark bg-white dark:bg-zinc-800 px-[15px] group">
+<summary class="flex cursor-pointer items-center justify-between gap-4 py-3">
+<p class="text-text-light-primary dark:text-text-dark-primary text-sm font-medium leading-normal">Is my personal data secure?</p>
+<span class="material-symbols-outlined text-text-light-secondary dark:text-text-dark-secondary group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<p class="text-text-light-secondary dark:text-text-dark-secondary text-sm font-normal leading-normal pb-3">
+                            Yes, we use industry-standard encryption and security protocols to ensure your personal data is protected at all times. Your privacy is our top priority.
+                        </p>
+</details>
+<details class="flex flex-col rounded-lg border border-border-light dark:border-border-dark bg-white dark:bg-zinc-800 px-[15px] group">
+<summary class="flex cursor-pointer items-center justify-between gap-4 py-3">
+<p class="text-text-light-primary dark:text-text-dark-primary text-sm font-medium leading-normal">How can I reset my password?</p>
+<span class="material-symbols-outlined text-text-light-secondary dark:text-text-dark-secondary group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<p class="text-text-light-secondary dark:text-text-dark-secondary text-sm font-normal leading-normal pb-3">
+                            On the login screen, tap the "Forgot Password?" link. Enter your registered email address, and we will send you instructions to reset your password.
+                        </p>
+</details>
+</div>
+</section>
+<!-- Help Topics Section -->
+<section class="mt-8">
+<h2 class="text-text-light-primary dark:text-text-dark-primary text-xl font-bold leading-tight tracking-tight px-4 pb-3">Help Topics</h2>
+<div class="flex flex-col px-4 gap-3">
+<a class="flex items-center justify-between rounded-lg border border-border-light dark:border-border-dark bg-white dark:bg-zinc-800 p-4 hover:bg-black/5 dark:hover:bg-white/5 transition-colors" href="#">
+<div class="flex items-center gap-4">
+<div class="flex items-center justify-center size-10 rounded-full bg-primary/10 text-primary">
+<span class="material-symbols-outlined">person</span>
+</div>
+<p class="text-text-light-primary dark:text-text-dark-primary font-medium">Account &amp; Profile</p>
+</div>
+<span class="material-symbols-outlined text-text-light-secondary dark:text-text-dark-secondary">chevron_right</span>
+</a>
+<a class="flex items-center justify-between rounded-lg border border-border-light dark:border-border-dark bg-white dark:bg-zinc-800 p-4 hover:bg-black/5 dark:hover:bg-white/5 transition-colors" href="#">
+<div class="flex items-center gap-4">
+<div class="flex items-center justify-center size-10 rounded-full bg-primary/10 text-primary">
+<span class="material-symbols-outlined">calendar_month</span>
+</div>
+<p class="text-text-light-primary dark:text-text-dark-primary font-medium">Appointments</p>
+</div>
+<span class="material-symbols-outlined text-text-light-secondary dark:text-text-dark-secondary">chevron_right</span>
+</a>
+<a class="flex items-center justify-between rounded-lg border border-border-light dark:border-border-dark bg-white dark:bg-zinc-800 p-4 hover:bg-black/5 dark:hover:bg-white/5 transition-colors" href="#">
+<div class="flex items-center gap-4">
+<div class="flex items-center justify-center size-10 rounded-full bg-primary/10 text-primary">
+<span class="material-symbols-outlined">receipt_long</span>
+</div>
+<p class="text-text-light-primary dark:text-text-dark-primary font-medium">Billing &amp; Insurance</p>
+</div>
+<span class="material-symbols-outlined text-text-light-secondary dark:text-text-dark-secondary">chevron_right</span>
+</a>
+<a class="flex items-center justify-between rounded-lg border border-border-light dark:border-border-dark bg-white dark:bg-zinc-800 p-4 hover:bg-black/5 dark:hover:bg-white/5 transition-colors" href="#">
+<div class="flex items-center gap-4">
+<div class="flex items-center justify-center size-10 rounded-full bg-primary/10 text-primary">
+<span class="material-symbols-outlined">widgets</span>
+</div>
+<p class="text-text-light-primary dark:text-text-dark-primary font-medium">App Features</p>
+</div>
+<span class="material-symbols-outlined text-text-light-secondary dark:text-text-dark-secondary">chevron_right</span>
+</a>
+</div>
+</section>
+<!-- Contact Us Section -->
+<section class="mt-8">
+<h2 class="text-text-light-primary dark:text-text-dark-primary text-xl font-bold leading-tight tracking-tight px-4 pb-3">Contact Us</h2>
+<div class="px-4">
+<div class="flex flex-col gap-3 rounded-lg border border-border-light dark:border-border-dark bg-white dark:bg-zinc-800 p-4">
+<a class="flex items-center gap-4 p-3 rounded-lg hover:bg-black/5 dark:hover:bg-white/5 transition-colors" href="mailto:support@trustnet.health">
+<span class="material-symbols-outlined text-primary">email</span>
+<div class="flex flex-col">
+<p class="text-text-light-primary dark:text-text-dark-primary font-medium">Email Support</p>
+<p class="text-sm text-text-light-secondary dark:text-text-dark-secondary">Get a response within 24 hours</p>
+</div>
+</a>
+<div class="h-px bg-border-light dark:bg-border-dark"></div>
+<a class="flex items-center gap-4 p-3 rounded-lg hover:bg-black/5 dark:hover:bg-white/5 transition-colors" href="tel:+1234567890">
+<span class="material-symbols-outlined text-primary">call</span>
+<div class="flex flex-col">
+<p class="text-text-light-primary dark:text-text-dark-primary font-medium">Call Us</p>
+<p class="text-sm text-text-light-secondary dark:text-text-dark-secondary">Mon-Fri, 9am - 5pm EST</p>
+</div>
+</a>
+<div class="h-px bg-border-light dark:bg-border-dark"></div>
+<a class="flex items-center gap-4 p-3 rounded-lg hover:bg-black/5 dark:hover:bg-white/5 transition-colors" href="#">
+<span class="material-symbols-outlined text-primary">chat</span>
+<div class="flex flex-col">
+<p class="text-text-light-primary dark:text-text-dark-primary font-medium">Live Chat</p>
+<p class="text-sm text-text-light-secondary dark:text-text-dark-secondary">Available during business hours</p>
+</div>
+</a>
+</div>
+</div>
+</section>
+</main>
+</div>
+</body></html>

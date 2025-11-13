@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>TrustNet Health+ Health Tracker</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#007AFF",
+              "background-light": "#FFFFFF",
+              "background-dark": "#1C1C1E",
+              "text-primary-light": "#333333",
+              "text-primary-dark": "#FFFFFF",
+              "text-secondary-light": "#6c757d",
+              "text-secondary-dark": "#a1a1a1",
+              "card-light": "#F2F2F7",
+              "card-dark": "#2C2C2E",
+              "positive": "#34C759"
+            },
+            fontFamily: {
+              "display": ["Inter", "sans-serif"]
+            },
+            borderRadius: {
+              "DEFAULT": "0.5rem",
+              "lg": "1rem",
+              "xl": "1.5rem",
+              "full": "9999px"
+            },
+          },
+        },
+      }
+    </script>
+<style>
+      body {
+        min-height: max(884px, 100dvh);
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-primary-light dark:text-text-primary-dark">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="flex items-center bg-background-light dark:bg-background-dark p-4 pb-2 justify-between sticky top-0 z-10">
+<div class="text-text-primary-light dark:text-text-primary-dark flex size-12 shrink-0 items-center justify-center">
+<span class="material-symbols-outlined">arrow_back_ios</span>
+</div>
+<h2 class="text-text-primary-light dark:text-text-primary-dark text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">Health Tracker</h2>
+<div class="size-12"></div>
+</div>
+<div class="flex gap-3 p-4 overflow-x-auto no-scrollbar">
+<div class="flex h-16 shrink-0 flex-col items-center justify-center gap-y-2 rounded-xl bg-card-light dark:bg-card-dark px-4 w-16">
+<p class="text-text-secondary-light dark:text-text-secondary-dark text-sm font-medium leading-normal">Mon</p>
+<p class="text-text-primary-light dark:text-text-primary-dark text-base font-bold">18</p>
+</div>
+<div class="flex h-16 shrink-0 flex-col items-center justify-center gap-y-2 rounded-xl bg-card-light dark:bg-card-dark px-4 w-16">
+<p class="text-text-secondary-light dark:text-text-secondary-dark text-sm font-medium leading-normal">Tue</p>
+<p class="text-text-primary-light dark:text-text-primary-dark text-base font-bold">19</p>
+</div>
+<div class="flex h-16 shrink-0 flex-col items-center justify-center gap-y-2 rounded-xl bg-primary px-4 w-16">
+<p class="text-white text-sm font-medium leading-normal">Wed</p>
+<p class="text-white text-base font-bold">20</p>
+</div>
+<div class="flex h-16 shrink-0 flex-col items-center justify-center gap-y-2 rounded-xl bg-card-light dark:bg-card-dark px-4 w-16">
+<p class="text-text-secondary-light dark:text-text-secondary-dark text-sm font-medium leading-normal">Thu</p>
+<p class="text-text-primary-light dark:text-text-primary-dark text-base font-bold">21</p>
+</div>
+<div class="flex h-16 shrink-0 flex-col items-center justify-center gap-y-2 rounded-xl bg-card-light dark:bg-card-dark px-4 w-16">
+<p class="text-text-secondary-light dark:text-text-secondary-dark text-sm font-medium leading-normal">Fri</p>
+<p class="text-text-primary-light dark:text-text-primary-dark text-base font-bold">22</p>
+</div>
+<div class="flex h-16 shrink-0 flex-col items-center justify-center gap-y-2 rounded-xl bg-card-light dark:bg-card-dark px-4 w-16">
+<p class="text-text-secondary-light dark:text-text-secondary-dark text-sm font-medium leading-normal">Sat</p>
+<p class="text-text-primary-light dark:text-text-primary-dark text-base font-bold">23</p>
+</div>
+<div class="flex h-16 shrink-0 flex-col items-center justify-center gap-y-2 rounded-xl bg-card-light dark:bg-card-dark px-4 w-16">
+<p class="text-text-secondary-light dark:text-text-secondary-dark text-sm font-medium leading-normal">Sun</p>
+<p class="text-text-primary-light dark:text-text-primary-dark text-base font-bold">24</p>
+</div>
+</div>
+<div class="px-4 pb-4">
+<button class="flex w-full items-center justify-center gap-2 rounded-xl bg-primary/10 dark:bg-primary/20 p-4 text-primary">
+<span class="material-symbols-outlined">flag</span>
+<span class="font-semibold">Set Your Goals</span>
+</button>
+</div>
+<div class="flex flex-col gap-4 p-4 pt-0">
+<div class="flex items-center gap-4 bg-card-light dark:bg-card-dark p-4 rounded-xl">
+<div class="relative size-24 shrink-0">
+<svg class="size-full" fill="none" height="36" viewBox="0 0 36 36" width="36" xmlns="http://www.w3.org/2000/svg">
+<circle class="text-primary/20" cx="18" cy="18" r="16" stroke="currentColor" stroke-width="3"></circle>
+<circle class="text-primary" cx="18" cy="18" r="16" stroke="currentColor" stroke-dasharray="100" stroke-dashoffset="48" stroke-width="3" transform="rotate(-90 18 18)"></circle>
+</svg>
+<div class="absolute inset-0 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-4xl">footprint</span>
+</div>
+</div>
+<div class="flex flex-col justify-center flex-1">
+<p class="text-text-primary-light dark:text-text-primary-dark text-lg font-semibold leading-normal">Steps</p>
+<p class="text-text-secondary-light dark:text-text-secondary-dark text-base font-normal leading-normal">5,234 / <span class="text-text-primary-light dark:text-text-primary-dark font-medium">10,000</span></p>
+<div class="mt-1 h-1.5 w-full rounded-full bg-primary/20">
+<div class="h-1.5 rounded-full bg-primary" style="width: 52.34%"></div>
+</div>
+</div>
+<button class="flex size-10 shrink-0 items-center justify-center rounded-full bg-primary/20 dark:bg-primary/30 text-primary">
+<span class="material-symbols-outlined">add</span>
+</button>
+</div>
+<div class="flex items-center gap-4 bg-card-light dark:bg-card-dark p-4 rounded-xl">
+<div class="relative size-24 shrink-0">
+<svg class="size-full" fill="none" height="36" viewBox="0 0 36 36" width="36" xmlns="http://www.w3.org/2000/svg">
+<circle class="text-primary/20" cx="18" cy="18" r="16" stroke="currentColor" stroke-width="3"></circle>
+<circle class="text-primary" cx="18" cy="18" r="16" stroke="currentColor" stroke-dasharray="100" stroke-dashoffset="40" stroke-width="3" transform="rotate(-90 18 18)"></circle>
+</svg>
+<div class="absolute inset-0 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-4xl">water_drop</span>
+</div>
+</div>
+<div class="flex flex-col justify-center flex-1">
+<p class="text-text-primary-light dark:text-text-primary-dark text-lg font-semibold leading-normal">Water</p>
+<p class="text-text-secondary-light dark:text-text-secondary-dark text-base font-normal leading-normal">1.2 / <span class="text-text-primary-light dark:text-text-primary-dark font-medium">2.0 L</span></p>
+<div class="mt-1 h-1.5 w-full rounded-full bg-primary/20">
+<div class="h-1.5 rounded-full bg-primary" style="width: 60%"></div>
+</div>
+</div>
+<button class="flex size-10 shrink-0 items-center justify-center rounded-full bg-primary/20 dark:bg-primary/30 text-primary">
+<span class="material-symbols-outlined">add</span>
+</button>
+</div>
+<div class="flex items-center gap-4 bg-card-light dark:bg-card-dark p-4 rounded-xl">
+<div class="relative size-24 shrink-0">
+<svg class="size-full" fill="none" height="36" viewBox="0 0 36 36" width="36" xmlns="http://www.w3.org/2000/svg">
+<circle class="text-positive/20" cx="18" cy="18" r="16" stroke="currentColor" stroke-width="3"></circle>
+<circle class="text-positive" cx="18" cy="18" r="16" stroke="currentColor" stroke-dasharray="100" stroke-dashoffset="6" stroke-width="3" transform="rotate(-90 18 18)"></circle>
+</svg>
+<div class="absolute inset-0 flex items-center justify-center text-positive">
+<span class="material-symbols-outlined text-4xl">bedtime</span>
+</div>
+</div>
+<div class="flex flex-col justify-center flex-1">
+<p class="text-text-primary-light dark:text-text-primary-dark text-lg font-semibold leading-normal">Sleep</p>
+<p class="text-text-secondary-light dark:text-text-secondary-dark text-base font-normal leading-normal">7h 30m / <span class="text-text-primary-light dark:text-text-primary-dark font-medium">8h</span></p>
+<div class="mt-1 h-1.5 w-full rounded-full bg-positive/20">
+<div class="h-1.5 rounded-full bg-positive" style="width: 93.75%"></div>
+</div>
+</div>
+<button class="flex size-10 shrink-0 items-center justify-center rounded-full bg-positive/20 dark:bg-positive/30 text-positive">
+<span class="material-symbols-outlined">add</span>
+</button>
+</div>
+</div>
+<div class="fixed bottom-24 right-6">
+<button class="flex items-center justify-center size-16 rounded-full bg-primary text-white shadow-lg">
+<span class="material-symbols-outlined text-3xl">add</span>
+</button>
+</div>
+<div class="sticky bottom-0 bg-background-light dark:bg-background-dark border-t border-gray-200 dark:border-gray-700 mt-auto">
+<div class="flex justify-around py-2">
+<div class="flex flex-col items-center gap-1 text-text-secondary-light dark:text-text-secondary-dark">
+<span class="material-symbols-outlined text-2xl">home</span>
+<p class="text-xs">Home</p>
+</div>
+<div class="flex flex-col items-center gap-1 text-text-secondary-light dark:text-text-secondary-dark">
+<span class="material-symbols-outlined text-2xl">emergency</span>
+<p class="text-xs">Emergency</p>
+</div>
+<div class="flex flex-col items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-2xl">monitoring</span>
+<p class="text-xs">Tracker</p>
+</div>
+<div class="flex flex-col items-center gap-1 text-text-secondary-light dark:text-text-secondary-dark">
+<span class="material-symbols-outlined text-2xl">person</span>
+<p class="text-xs">Profile</p>
+</div>
+</div>
+</div>
+</div>
+
+</body></html>

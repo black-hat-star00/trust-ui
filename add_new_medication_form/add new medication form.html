@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Add New Medication</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#34C759", // A healthy, vibrant green as requested.
+                        "background-light": "#F8F9FA",
+                        "background-dark": "#1C1C1E",
+                        "text-light": "#1C1C1E",
+                        "text-dark": "#F8F9FA",
+                        "secondary-text-light": "#8A8A8E",
+                        "secondary-text-dark": "#A0A0A5",
+                        "border-light": "#E0E0E0",
+                        "border-dark": "#3A3A3C",
+                        "component-bg-light": "#FFFFFF",
+                        "component-bg-dark": "#2C2C2E",
+                        "component-subtle-bg-light": "#F0F0F0",
+                        "component-subtle-bg-dark": "#252527",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.75rem", // 12px
+                        "lg": "1rem", // 16px
+                        "xl": "1.5rem", // 24px
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            font-size: 24px;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex min-h-screen w-full flex-col">
+<!-- Top App Bar -->
+<header class="sticky top-0 z-10 flex h-16 shrink-0 items-center justify-between border-b border-border-light/80 bg-background-light/80 px-4 backdrop-blur-sm dark:border-border-dark/80 dark:bg-background-dark/80">
+<button class="flex h-10 w-10 items-center justify-center text-text-light dark:text-text-dark">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<h1 class="flex-1 text-center text-lg font-bold text-text-light dark:text-text-dark">Add New Medication</h1>
+<div class="w-10"></div> <!-- Spacer -->
+</header>
+<!-- Main Content -->
+<main class="flex-grow px-4 pb-28 pt-6">
+<div class="mx-auto max-w-md space-y-6">
+<!-- Medication Details Section -->
+<section class="space-y-4">
+<label class="flex flex-col">
+<p class="pb-2 text-base font-medium text-text-light dark:text-text-dark">Medication Name</p>
+<input class="form-input h-14 w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg border border-border-light bg-component-bg-light p-4 text-base font-normal leading-normal text-text-light placeholder:text-secondary-text-light focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20 dark:border-border-dark dark:bg-component-bg-dark dark:text-text-dark dark:placeholder:text-secondary-text-dark" placeholder="e.g., Ibuprofen" type="text" value=""/>
+</label>
+<div class="flex flex-wrap items-end gap-4">
+<label class="flex min-w-40 flex-1 flex-col">
+<p class="pb-2 text-base font-medium text-text-light dark:text-text-dark">Dosage</p>
+<input class="form-input h-14 w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg border border-border-light bg-component-bg-light p-4 text-base font-normal leading-normal text-text-light placeholder:text-secondary-text-light focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20 dark:border-border-dark dark:bg-component-bg-dark dark:text-text-dark dark:placeholder:text-secondary-text-dark" placeholder="e.g., 500" type="number" value=""/>
+</label>
+<label class="flex min-w-20 flex-1 flex-col">
+<p class="pb-2 text-base font-medium text-text-light dark:text-text-dark">Units</p>
+<input class="form-input h-14 w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg border border-border-light bg-component-bg-light p-4 text-base font-normal leading-normal text-text-light placeholder:text-secondary-text-light focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20 dark:border-border-dark dark:bg-component-bg-dark dark:text-text-dark dark:placeholder:text-secondary-text-dark" placeholder="mg" type="text" value=""/>
+</label>
+</div>
+</section>
+<!-- Schedule Section -->
+<section class="space-y-4 pt-4">
+<h2 class="text-lg font-bold text-text-light dark:text-text-dark">Schedule</h2>
+<div>
+<p class="pb-2 text-base font-medium text-text-light dark:text-text-dark">Frequency</p>
+<div class="flex h-12 flex-1 items-center justify-center rounded-lg bg-component-subtle-bg-light p-1 dark:bg-component-subtle-bg-dark">
+<label class="flex h-full grow cursor-pointer items-center justify-center overflow-hidden rounded-md px-2 text-sm font-medium leading-normal text-secondary-text-light has-[:checked]:bg-component-bg-light has-[:checked]:text-text-light has-[:checked]:shadow-sm dark:text-secondary-text-dark dark:has-[:checked]:bg-component-bg-dark dark:has-[:checked]:text-text-dark">
+<span class="truncate">Daily</span>
+<input checked="" class="invisible w-0" name="frequency" type="radio" value="Daily"/>
+</label>
+<label class="flex h-full grow cursor-pointer items-center justify-center overflow-hidden rounded-md px-2 text-sm font-medium leading-normal text-secondary-text-light has-[:checked]:bg-component-bg-light has-[:checked]:text-text-light has-[:checked]:shadow-sm dark:text-secondary-text-dark dark:has-[:checked]:bg-component-bg-dark dark:has-[:checked]:text-text-dark">
+<span class="truncate">Weekly</span>
+<input class="invisible w-0" name="frequency" type="radio" value="Weekly"/>
+</label>
+<label class="flex h-full grow cursor-pointer items-center justify-center overflow-hidden rounded-md px-2 text-sm font-medium leading-normal text-secondary-text-light has-[:checked]:bg-component-bg-light has-[:checked]:text-text-light has-[:checked]:shadow-sm dark:text-secondary-text-dark dark:has-[:checked]:bg-component-bg-dark dark:has-[:checked]:text-text-dark">
+<span class="truncate">As Needed</span>
+<input class="invisible w-0" name="frequency" type="radio" value="As Needed"/>
+</label>
+</div>
+</div>
+<div>
+<p class="pb-2 text-base font-medium text-text-light dark:text-text-dark">Reminders</p>
+<div class="space-y-3">
+<div class="flex h-14 items-center justify-between rounded-lg bg-component-bg-light p-4 dark:bg-component-bg-dark">
+<span class="text-lg font-semibold text-text-light dark:text-text-dark">08:00 AM</span>
+<button class="flex h-8 w-8 items-center justify-center text-secondary-text-light dark:text-secondary-text-dark">
+<span class="material-symbols-outlined text-xl">close</span>
+</button>
+</div>
+<div class="flex h-14 items-center justify-between rounded-lg bg-component-bg-light p-4 dark:bg-component-bg-dark">
+<span class="text-lg font-semibold text-text-light dark:text-text-dark">09:00 PM</span>
+<button class="flex h-8 w-8 items-center justify-center text-secondary-text-light dark:text-secondary-text-dark">
+<span class="material-symbols-outlined text-xl">close</span>
+</button>
+</div>
+<button class="flex h-14 w-full items-center justify-center gap-2 rounded-lg border-2 border-dashed border-border-light bg-transparent py-3 text-base font-semibold text-primary transition-colors hover:bg-primary/10 dark:border-border-dark">
+<span class="material-symbols-outlined">add_circle</span>
+                                Add Reminder
+                            </button>
+</div>
+</div>
+</section>
+</div>
+</main>
+<!-- Bottom Action Bar -->
+<footer class="fixed bottom-0 left-0 z-10 w-full border-t border-border-light/80 bg-background-light/80 p-4 backdrop-blur-sm dark:border-border-dark/80 dark:bg-background-dark/80">
+<div class="mx-auto max-w-md">
+<button class="flex h-14 w-full items-center justify-center rounded-xl bg-primary text-lg font-bold text-white transition-opacity hover:opacity-90">
+                    Save Medication
+                </button>
+</div>
+</footer>
+</div>
+</body></html>

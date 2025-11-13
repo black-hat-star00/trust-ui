@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>TrustNet Health+ Sign Up</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#0066CC", // Trustworthy Blue
+            "background-light": "#FFFFFF", // Off-White
+            "background-dark": "#121212",
+            "light-blue-grey": "#F0F8FF",
+            "charcoal": "#333333",
+            "medium-grey": "#888888",
+            "error": "#D32F2F"
+          },
+          fontFamily: {
+            "display": ["Inter", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.5rem",
+            "lg": "1rem",
+            "xl": "1.5rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-display">
+<div class="relative flex min-h-screen w-full flex-col items-center justify-center bg-background-light dark:bg-background-dark p-4">
+<div class="w-full max-w-md space-y-8">
+<div class="flex flex-col items-center space-y-4">
+<div class="flex h-12 w-12 items-center justify-center rounded-full bg-primary text-white">
+<span class="material-symbols-outlined text-3xl">health_and_safety</span>
+</div>
+<h1 class="text-charcoal dark:text-gray-200 text-3xl font-bold tracking-tight">Create Account</h1>
+<p class="text-medium-grey dark:text-gray-400 text-center">Join TrustNet Health+ to manage your health.</p>
+</div>
+<div class="space-y-6">
+<div class="flex flex-col">
+<label class="text-charcoal dark:text-gray-300 text-sm font-medium leading-normal pb-2" for="fullname">Full Name</label>
+<div class="relative flex w-full items-center">
+<span class="material-symbols-outlined absolute left-4 text-medium-grey">badge</span>
+<input class="form-input flex w-full flex-1 rounded-lg border border-gray-300 dark:border-gray-600 bg-background-light dark:bg-gray-800 text-charcoal dark:text-white placeholder:text-medium-grey dark:placeholder:text-gray-500 focus:border-primary focus:ring-primary h-12 py-2 pl-12 pr-4 text-base font-normal" id="fullname" placeholder="Enter your full name" type="text"/>
+</div>
+</div>
+<div class="flex flex-col">
+<label class="text-charcoal dark:text-gray-300 text-sm font-medium leading-normal pb-2" for="email">Email or Phone Number</label>
+<div class="relative flex w-full items-center">
+<span class="material-symbols-outlined absolute left-4 text-medium-grey">person</span>
+<input class="form-input flex w-full flex-1 rounded-lg border border-gray-300 dark:border-gray-600 bg-background-light dark:bg-gray-800 text-charcoal dark:text-white placeholder:text-medium-grey dark:placeholder:text-gray-500 focus:border-primary focus:ring-primary h-12 py-2 pl-12 pr-4 text-base font-normal" id="email" placeholder="Enter your email or phone" type="text"/>
+</div>
+</div>
+<div class="flex flex-col">
+<label class="text-charcoal dark:text-gray-300 text-sm font-medium leading-normal pb-2" for="password">Password</label>
+<div class="relative flex w-full items-center">
+<span class="material-symbols-outlined absolute left-4 text-medium-grey">lock</span>
+<input class="form-input flex w-full flex-1 rounded-lg border border-gray-300 dark:border-gray-600 bg-background-light dark:bg-gray-800 text-charcoal dark:text-white placeholder:text-medium-grey dark:placeholder:text-gray-500 focus:border-primary focus:ring-primary h-12 py-2 pl-12 pr-12 text-base font-normal" id="password" placeholder="Enter your password" type="password"/>
+<button aria-label="Toggle password visibility" class="absolute right-0 flex h-full w-12 items-center justify-center text-medium-grey" type="button">
+<span class="material-symbols-outlined">visibility</span>
+</button>
+</div>
+</div>
+<button class="flex w-full items-center justify-center rounded-lg bg-primary h-12 px-6 text-base font-medium text-white transition-colors hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 dark:focus:ring-offset-background-dark">
+          Sign Up
+        </button>
+</div>
+<div class="text-center">
+<p class="text-xs text-medium-grey dark:text-gray-400">
+          By signing up, you agree to our <br/> <a class="font-medium text-primary hover:underline" href="#">Terms of Service</a> and <a class="font-medium text-primary hover:underline" href="#">Privacy Policy</a>.
+        </p>
+</div>
+<div class="text-center">
+<p class="text-sm text-medium-grey dark:text-gray-400">
+          Already have an account? <a class="font-medium text-primary hover:underline" href="#">Log in</a>
+</p>
+</div>
+</div>
+</div>
+
+</body></html>

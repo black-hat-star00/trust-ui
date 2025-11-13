@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>TrustNet Health+ Facilities</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+        @layer base {
+            .material-symbols-outlined {
+                font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            }
+        }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+                "primary": "#4A90E2",
+                "accent": "#50E3C2",
+                "text-primary": "#4A4A4A",
+                "text-secondary": "#9B9B9B",
+                "status-closed": "#F5A623",
+                "background-light": "#FFFFFF",
+                "background-dark": "#1F2937",
+                "surface-light": "#F9FAFB",
+                "surface-dark": "#374151"
+            },
+            fontFamily: {
+              "display": ["Inter", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.75rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<!-- Top App Bar -->
+<header class="sticky top-0 z-20 bg-background-light dark:bg-background-dark/80 backdrop-blur-sm">
+<div class="flex items-center p-4 pb-2 justify-between">
+<button class="text-text-primary dark:text-gray-200 flex size-10 items-center justify-center">
+<span class="material-symbols-outlined text-2xl">arrow_back</span>
+</button>
+<h1 class="text-text-primary dark:text-white text-xl font-bold leading-tight tracking-tight flex-1 text-center">Facilities</h1>
+<div class="size-10"></div>
+</div>
+<!-- Search Bar & Filter -->
+<div class="px-4 py-3 flex items-center gap-3">
+<label class="flex flex-col min-w-40 h-12 w-full">
+<div class="flex w-full flex-1 items-stretch rounded-lg h-full">
+<div class="text-text-secondary dark:text-gray-400 flex border-none bg-surface-light dark:bg-surface-dark items-center justify-center pl-4 rounded-l-lg">
+<span class="material-symbols-outlined text-2xl">search</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-r-lg text-text-primary dark:text-white focus:outline-0 focus:ring-0 border-none bg-surface-light dark:bg-surface-dark h-full placeholder:text-text-secondary dark:placeholder:text-gray-400 px-4 pl-2 text-base font-normal leading-normal" placeholder="Search by name, specialty..."/>
+</div>
+</label>
+<button class="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-surface-light dark:bg-surface-dark text-text-primary dark:text-white">
+<span class="material-symbols-outlined text-2xl">tune</span>
+</button>
+</div>
+<!-- Chips -->
+<div class="flex gap-2 px-4 pb-3 overflow-x-auto">
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full bg-primary/20 dark:bg-primary/30 pl-4 pr-4">
+<p class="text-primary dark:text-white text-sm font-medium leading-normal">All</p>
+</button>
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full bg-surface-light dark:bg-surface-dark pl-4 pr-4">
+<p class="text-text-primary dark:text-gray-200 text-sm font-medium leading-normal">Hospital</p>
+</button>
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full bg-surface-light dark:bg-surface-dark pl-4 pr-4">
+<p class="text-text-primary dark:text-gray-200 text-sm font-medium leading-normal">Clinic</p>
+</button>
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full bg-surface-light dark:bg-surface-dark pl-4 pr-4">
+<p class="text-text-primary dark:text-gray-200 text-sm font-medium leading-normal">Pharmacy</p>
+</button>
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full bg-surface-light dark:bg-surface-dark pl-4 pr-4">
+<p class="text-text-primary dark:text-gray-200 text-sm font-medium leading-normal">Urgent Care</p>
+</button>
+</div>
+</header>
+<main class="flex-1">
+<!-- Map -->
+<div class="relative px-4">
+<div class="w-full bg-center bg-no-repeat aspect-[4/3] sm:aspect-video bg-cover rounded-xl object-cover" data-alt="A map view of a city with pins marking healthcare facilities" data-location="City Name" style='background-image: url("https://placeholder.pics/svg/300");'></div>
+<button class="absolute bottom-4 left-1/2 -translate-x-1/2 bg-primary text-white text-sm font-semibold px-4 py-2 rounded-full shadow-lg flex items-center gap-2">
+<span class="material-symbols-outlined text-base">refresh</span>
+                    Re-search this area
+                </button>
+</div>
+<!-- Section Header -->
+<div class="flex justify-between items-center px-4 pt-6 pb-2">
+<h2 class="text-text-primary dark:text-white text-lg font-bold leading-tight tracking-tight">Nearby Facilities</h2>
+<a class="text-primary dark:text-blue-400 text-sm font-medium" href="#">See all</a>
+</div>
+<!-- Facility List -->
+<div class="flex flex-col gap-3 px-4 pb-6">
+<!-- Facility Card 1 -->
+<div class="flex items-center gap-4 rounded-xl p-3 bg-surface-light dark:bg-surface-dark">
+<div class="flex size-12 items-center justify-center rounded-lg bg-primary/20 dark:bg-primary/30 text-primary dark:text-blue-300">
+<span class="material-symbols-outlined text-3xl">local_hospital</span>
+</div>
+<div class="flex-1">
+<p class="font-bold text-base text-text-primary dark:text-white">City General Hospital</p>
+<p class="text-sm text-text-secondary dark:text-gray-400">Hospital • 1.2 miles</p>
+<div class="flex items-center gap-1.5 mt-1">
+<div class="size-2 rounded-full bg-accent"></div>
+<p class="text-sm font-medium text-accent">Open</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-text-secondary dark:text-gray-400">chevron_right</span>
+</div>
+<!-- Facility Card 2 -->
+<div class="flex items-center gap-4 rounded-xl p-3 bg-surface-light dark:bg-surface-dark">
+<div class="flex size-12 items-center justify-center rounded-lg bg-primary/20 dark:bg-primary/30 text-primary dark:text-blue-300">
+<span class="material-symbols-outlined text-3xl">vaccines</span>
+</div>
+<div class="flex-1">
+<p class="font-bold text-base text-text-primary dark:text-white">Oakwood Family Clinic</p>
+<p class="text-sm text-text-secondary dark:text-gray-400">Clinic • 2.5 miles</p>
+<div class="flex items-center gap-1.5 mt-1">
+<div class="size-2 rounded-full bg-status-closed"></div>
+<p class="text-sm font-medium text-status-closed">Closed</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-text-secondary dark:text-gray-400">chevron_right</span>
+</div>
+<!-- Facility Card 3 -->
+<div class="flex items-center gap-4 rounded-xl p-3 bg-surface-light dark:bg-surface-dark">
+<div class="flex size-12 items-center justify-center rounded-lg bg-primary/20 dark:bg-primary/30 text-primary dark:text-blue-300">
+<span class="material-symbols-outlined text-3xl">medication</span>
+</div>
+<div class="flex-1">
+<p class="font-bold text-base text-text-primary dark:text-white">Wellness Pharmacy</p>
+<p class="text-sm text-text-secondary dark:text-gray-400">Pharmacy • 3.1 miles</p>
+<div class="flex items-center gap-1.5 mt-1">
+<div class="size-2 rounded-full bg-accent"></div>
+<p class="text-sm font-medium text-accent">Open</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-text-secondary dark:text-gray-400">chevron_right</span>
+</div>
+<!-- Facility Card 4 -->
+<div class="flex items-center gap-4 rounded-xl p-3 bg-surface-light dark:bg-surface-dark">
+<div class="flex size-12 items-center justify-center rounded-lg bg-primary/20 dark:bg-primary/30 text-primary dark:text-blue-300">
+<span class="material-symbols-outlined text-3xl">emergency</span>
+</div>
+<div class="flex-1">
+<p class="font-bold text-base text-text-primary dark:text-white">Eastside Urgent Care</p>
+<p class="text-sm text-text-secondary dark:text-gray-400">Urgent Care • 4.0 miles</p>
+<div class="flex items-center gap-1.5 mt-1">
+<div class="size-2 rounded-full bg-accent"></div>
+<p class="text-sm font-medium text-accent">Open 24 hours</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-text-secondary dark:text-gray-400">chevron_right</span>
+</div>
+</div>
+</main>
+</div>
+</body></html>

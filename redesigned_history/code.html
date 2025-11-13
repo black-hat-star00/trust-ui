@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>TrustNet Health+ History</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#007AFF",
+                        "background-light": "#F2F2F7",
+                        "background-dark": "#102210",
+                        "text-light-primary": "#1C1C1E",
+                        "text-light-secondary": "#8A8A8E",
+                        "card-light": "#FFFFFF",
+                        "card-dark": "#1C1C1E",
+                        "status-green": "#34C759",
+                        "status-red": "#FF3B30",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col bg-background-light dark:bg-background-dark">
+<!-- Top App Bar -->
+<header class="sticky top-0 z-10 flex flex-col bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+<div class="flex items-center p-4">
+<button class="flex size-10 shrink-0 items-center justify-center text-text-light-primary dark:text-white">
+<span class="material-symbols-outlined text-2xl">arrow_back</span>
+</button>
+<h1 class="flex-1 text-center text-lg font-bold leading-tight tracking-tight text-text-light-primary dark:text-white">History</h1>
+<div class="w-10"></div> <!-- Spacer -->
+</div>
+<!-- Filter Chips -->
+<div class="flex items-center gap-2 px-4 pb-4 overflow-x-auto">
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full bg-primary px-4 text-white">
+<p class="text-sm font-medium">All</p>
+</button>
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full bg-card-light dark:bg-card-dark px-4 text-text-light-primary dark:text-white">
+<p class="text-sm font-medium">SOS</p>
+</button>
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full bg-card-light dark:bg-card-dark px-4 text-text-light-primary dark:text-white">
+<p class="text-sm font-medium">Consultations</p>
+</button>
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full bg-card-light dark:bg-card-dark px-4 text-text-light-primary dark:text-white">
+<p class="text-sm font-medium">Vitals</p>
+</button>
+<button class="flex ml-auto h-10 w-10 shrink-0 items-center justify-center rounded-full bg-card-light dark:bg-card-dark text-text-light-primary dark:text-white">
+<span class="material-symbols-outlined text-xl">calendar_month</span>
+</button>
+</div>
+</header>
+<!-- Main Content -->
+<main class="flex-1 px-4">
+<!-- Section Header: Today -->
+<h2 class="py-3 text-sm font-bold uppercase tracking-wider text-text-light-secondary dark:text-gray-400">Today</h2>
+<!-- History Card: SOS -->
+<div class="mb-4">
+<div class="flex items-center gap-4 rounded-xl bg-card-light dark:bg-card-dark p-4 shadow-sm">
+<div class="flex size-12 shrink-0 items-center justify-center rounded-full bg-status-red/10 text-status-red">
+<span class="material-symbols-outlined">sos</span>
+</div>
+<div class="flex-1">
+<p class="font-bold text-text-light-primary dark:text-white">Emergency SOS Alert</p>
+<p class="text-sm text-text-light-secondary dark:text-gray-400">Oct 24, 2024, 10:45 AM • <span class="text-status-green">Completed</span></p>
+</div>
+<button class="flex size-8 items-center justify-center text-text-light-secondary dark:text-gray-400">
+<span class="material-symbols-outlined text-2xl">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- History Card: Video Consultation -->
+<div class="mb-4">
+<div class="flex items-center gap-4 rounded-xl bg-card-light dark:bg-card-dark p-4 shadow-sm">
+<div class="flex size-12 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary">
+<span class="material-symbols-outlined">videocam</span>
+</div>
+<div class="flex-1">
+<p class="font-bold text-text-light-primary dark:text-white">Video Consultation</p>
+<p class="text-sm text-text-light-secondary dark:text-gray-400">Oct 24, 2024, 09:15 AM • <span class="text-status-green">Completed</span></p>
+</div>
+<button class="flex size-8 items-center justify-center text-text-light-secondary dark:text-gray-400">
+<span class="material-symbols-outlined text-2xl">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- Section Header: Yesterday -->
+<h2 class="py-3 text-sm font-bold uppercase tracking-wider text-text-light-secondary dark:text-gray-400">Yesterday</h2>
+<!-- History Card: Vitals Logged -->
+<div class="mb-4">
+<div class="flex items-center gap-4 rounded-xl bg-card-light dark:bg-card-dark p-4 shadow-sm">
+<div class="flex size-12 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary">
+<span class="material-symbols-outlined">monitor_heart</span>
+</div>
+<div class="flex-1">
+<p class="font-bold text-text-light-primary dark:text-white">Vital Signs Logged</p>
+<p class="text-sm text-text-light-secondary dark:text-gray-400">Oct 23, 2024, 08:00 AM • <span class="text-status-green">Completed</span></p>
+</div>
+<button class="flex size-8 items-center justify-center text-text-light-secondary dark:text-gray-400">
+<span class="material-symbols-outlined text-2xl">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- Section Header: October 2024 -->
+<h2 class="py-3 text-sm font-bold uppercase tracking-wider text-text-light-secondary dark:text-gray-400">October 20, 2024</h2>
+<!-- History Card: SOS Cancelled -->
+<div class="mb-4">
+<div class="flex items-center gap-4 rounded-xl bg-card-light dark:bg-card-dark p-4 shadow-sm">
+<div class="flex size-12 shrink-0 items-center justify-center rounded-full bg-status-red/10 text-status-red">
+<span class="material-symbols-outlined">sos</span>
+</div>
+<div class="flex-1">
+<p class="font-bold text-text-light-primary dark:text-white">Emergency SOS Alert</p>
+<p class="text-sm text-text-light-secondary dark:text-gray-400">Oct 20, 2024, 03:30 PM • <span class="text-text-light-secondary dark:text-gray-400">Cancelled</span></p>
+</div>
+<button class="flex size-8 items-center justify-center text-text-light-secondary dark:text-gray-400">
+<span class="material-symbols-outlined text-2xl">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- Empty State Example -->
+<div class="mt-8 text-center">
+<div class="flex items-center justify-center">
+<span class="material-symbols-outlined text-6xl text-gray-300 dark:text-gray-600">history_toggle_off</span>
+</div>
+<h3 class="mt-4 text-lg font-semibold text-text-light-primary dark:text-white">No More History</h3>
+<p class="mt-1 text-sm text-text-light-secondary dark:text-gray-400">Your past events will appear here.</p>
+</div>
+</main>
+</div>
+</body></html>

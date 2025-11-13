@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact Us - TrustNet Health+</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#007AFF", // Per user request: A calming, professional blue
+              "background-light": "#F9FAFB", // Per user request: Off-white
+              "background-dark": "#111621",
+              "text-light-primary": "#1D2939", // Per user request: Dark charcoal
+              "text-light-secondary": "#667085", // Per user request: Muted grey
+              "text-dark-primary": "#F9FAFB",
+              "text-dark-secondary": "#9CA3AF",
+              "border-light": "#E5E7EB",
+              "border-dark": "#374151"
+            },
+            fontFamily: {
+              "display": ["Inter", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.75rem", "xl": "1rem", "full": "9999px"}, // Using larger radius for a modern feel
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-display">
+<div class="relative flex min-h-screen w-full flex-col bg-background-light dark:bg-background-dark group/design-root overflow-x-hidden">
+<!-- Top App Bar -->
+<header class="flex items-center bg-background-light dark:bg-background-dark p-4 pb-2 justify-between sticky top-0 z-10 border-b border-border-light dark:border-border-dark">
+<div class="flex size-10 shrink-0 items-center justify-center">
+<span class="material-symbols-outlined text-text-light-primary dark:text-text-dark-primary text-2xl">arrow_back</span>
+</div>
+<h1 class="text-text-light-primary dark:text-text-dark-primary text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">Contact Us</h1>
+<div class="size-10 shrink-0"></div> <!-- Spacer to center title -->
+</header>
+<main class="flex-1 px-4 py-6">
+<div class="flex flex-col gap-2">
+<!-- List Item: Email Support -->
+<div class="flex cursor-pointer items-center gap-4 rounded-lg bg-white dark:bg-background-dark dark:border dark:border-border-dark p-4 min-h-[72px] justify-between">
+<div class="flex items-center gap-4">
+<div class="text-primary flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-primary/10 dark:bg-primary/20">
+<span class="material-symbols-outlined text-2xl">mail</span>
+</div>
+<div class="flex flex-col justify-center">
+<p class="text-text-light-primary dark:text-text-dark-primary text-base font-medium leading-normal line-clamp-1">Email Support</p>
+<p class="text-text-light-secondary dark:text-text-dark-secondary text-sm font-normal leading-normal line-clamp-2">Get a response within 24 hours</p>
+</div>
+</div>
+<div class="shrink-0">
+<div class="text-text-light-secondary dark:text-text-dark-secondary flex size-7 items-center justify-center">
+<span class="material-symbols-outlined text-2xl">chevron_right</span>
+</div>
+</div>
+</div>
+<!-- List Item: Call Us -->
+<div class="flex cursor-pointer items-center gap-4 rounded-lg bg-white dark:bg-background-dark dark:border dark:border-border-dark p-4 min-h-[72px] justify-between">
+<div class="flex items-center gap-4">
+<div class="text-primary flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-primary/10 dark:bg-primary/20">
+<span class="material-symbols-outlined text-2xl">call</span>
+</div>
+<div class="flex flex-col justify-center">
+<p class="text-text-light-primary dark:text-text-dark-primary text-base font-medium leading-normal line-clamp-1">Call Us</p>
+<p class="text-text-light-secondary dark:text-text-dark-secondary text-sm font-normal leading-normal line-clamp-2">Available 9 AM - 5 PM EST</p>
+</div>
+</div>
+<div class="shrink-0">
+<div class="text-text-light-secondary dark:text-text-dark-secondary flex size-7 items-center justify-center">
+<span class="material-symbols-outlined text-2xl">chevron_right</span>
+</div>
+</div>
+</div>
+<!-- List Item: Start Live Chat -->
+<div class="flex cursor-pointer items-center gap-4 rounded-lg bg-white dark:bg-background-dark dark:border dark:border-border-dark p-4 min-h-[72px] justify-between">
+<div class="flex items-center gap-4">
+<div class="text-primary flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-primary/10 dark:bg-primary/20">
+<span class="material-symbols-outlined text-2xl">chat_bubble</span>
+</div>
+<div class="flex flex-col justify-center">
+<p class="text-text-light-primary dark:text-text-dark-primary text-base font-medium leading-normal line-clamp-1">Start Live Chat</p>
+<p class="text-text-light-secondary dark:text-text-dark-secondary text-sm font-normal leading-normal line-clamp-2">Connect with an agent now</p>
+</div>
+</div>
+<div class="shrink-0">
+<div class="text-text-light-secondary dark:text-text-dark-secondary flex size-7 items-center justify-center">
+<span class="material-symbols-outlined text-2xl">chevron_right</span>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+</body></html>

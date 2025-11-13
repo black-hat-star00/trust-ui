@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>TrustNet Health+ Help Article</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#3B82F6", // Calming, professional blue from user request
+              "background-light": "#F9FAFB",
+              "background-dark": "#111621",
+              "text-light-primary": "#1F2937", // Dark charcoal from user request
+              "text-dark-primary": "#F9FAFB",
+              "feedback-no": "#D1D5DB",
+              "feedback-yes": "#3B82F6",
+              "success": "#10B981"
+            },
+            fontFamily: {
+              "display": ["Inter", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark">
+<div class="relative flex min-h-screen w-full flex-col bg-background-light dark:bg-background-dark font-display text-text-light-primary dark:text-text-dark-primary group/design-root overflow-x-hidden">
+<!-- Top App Bar -->
+<div class="sticky top-0 z-10 flex items-center bg-background-light/80 dark:bg-background-dark/80 p-4 pb-2 justify-between backdrop-blur-sm">
+<div class="flex size-10 shrink-0 items-center justify-center text-text-light-primary dark:text-text-dark-primary">
+<span class="material-symbols-outlined text-2xl">arrow_back</span>
+</div>
+<h2 class="text-text-light-primary dark:text-text-dark-primary text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">Help Article</h2>
+<div class="size-10 shrink-0"></div> <!-- Spacer for centering title -->
+</div>
+<!-- Content Area -->
+<main class="flex-grow px-4">
+<!-- Headline Text -->
+<h1 class="text-text-light-primary dark:text-text-dark-primary tracking-tight text-[32px] font-bold leading-tight pt-6 pb-3">How do I update my profile information?</h1>
+<!-- Body Text - Introduction -->
+<p class="text-text-light-primary/90 dark:text-text-dark-primary/90 text-base font-normal leading-relaxed pb-3 pt-1" style="line-height: 1.5;">
+                Keeping your profile information up to date is essential for a seamless healthcare experience. This guide will walk you through the process step by step.
+            </p>
+<!-- Title Text - Subheading -->
+<h2 class="text-text-light-primary dark:text-text-dark-primary text-[22px] font-bold leading-tight tracking-[-0.015em] pt-5 pb-3">Step-by-Step Guide</h2>
+<!-- Body Text - Numbered List -->
+<div class="text-text-light-primary/90 dark:text-text-dark-primary/90 text-base font-normal leading-relaxed space-y-3 pb-3 pt-1" style="line-height: 1.5;">
+<p><strong>1.</strong> Navigate to the 'Profile' section from the main menu.</p>
+<p><strong>2.</strong> Tap on the 'Edit Profile' button located at the top right corner of your screen.</p>
+<p><strong>3.</strong> Update your personal details, contact information, or insurance provider as needed.</p>
+<p><strong>4.</strong> Tap 'Save Changes' to confirm your updates. For more details, see our <a class="text-primary font-medium underline" href="#">Privacy Policy</a>.</p>
+</div>
+</main>
+<!-- Spacer -->
+<div class="flex-grow"></div>
+<!-- Feedback Section -->
+<div class="sticky bottom-0 bg-background-light dark:bg-background-dark px-4 py-6 mt-8 border-t border-slate-200 dark:border-slate-800">
+<p class="text-center font-semibold text-base text-text-light-primary dark:text-text-dark-primary mb-4">Was this article helpful?</p>
+<div class="flex items-center justify-center gap-4">
+<button class="flex h-12 flex-1 items-center justify-center gap-2 rounded-full border border-feedback-no bg-background-light dark:bg-background-dark text-text-light-primary dark:text-text-dark-primary font-semibold transition-colors hover:bg-slate-100 dark:hover:bg-slate-800">
+<span class="material-symbols-outlined">thumb_down</span>
+<span>No</span>
+</button>
+<button class="flex h-12 flex-1 items-center justify-center gap-2 rounded-full bg-primary text-white font-semibold transition-colors hover:bg-primary/90">
+<span class="material-symbols-outlined">thumb_up</span>
+<span>Yes</span>
+</button>
+</div>
+<!-- Confirmation Message (Initially Hidden) -->
+<!-- <p class="text-center text-success text-sm font-medium mt-4">Thank you for your feedback!</p> -->
+</div>
+</div>
+</body></html>

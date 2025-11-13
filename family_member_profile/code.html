@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Family Member Profile</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#007AFF",
+              "background-light": "#F2F2F7",
+              "background-dark": "#1C1C1E",
+              "text-primary-light": "#1C1C1E",
+              "text-primary-dark": "#FFFFFF",
+              "text-secondary-light": "#8A8A8E",
+              "text-secondary-dark": "#8E8E93",
+              "destructive": "#FF3B30",
+              "destructive-hover": "#FF453A",
+              "card-light": "#FFFFFF",
+              "card-dark": "#2C2C2E",
+              "icon-bg-light": "#F0F2F4",
+              "icon-bg-dark": "#3A3A3C"
+            },
+            fontFamily: {
+              "display": ["Inter", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.5rem", "lg": "0.75rem", "xl": "1rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-display bg-background-light dark:bg-background-dark">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root">
+<!-- Top App Bar -->
+<div class="sticky top-0 z-10 flex items-center justify-between bg-card-light dark:bg-card-dark p-4 pb-3">
+<div class="flex size-10 shrink-0 items-center justify-center">
+<span class="material-symbols-outlined text-text-primary-light dark:text-text-primary-dark">arrow_back</span>
+</div>
+<h1 class="text-lg font-bold leading-tight tracking-[-0.015em] text-text-primary-light dark:text-text-primary-dark flex-1 text-center">Profile</h1>
+<div class="flex w-10 items-center justify-end">
+<p class="text-primary text-base font-semibold leading-normal shrink-0">Edit</p>
+</div>
+</div>
+<main class="flex-1 px-4 pt-4 pb-8">
+<!-- Profile Header -->
+<div class="flex w-full flex-col items-center gap-4 py-4">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-32 w-32" data-alt="Profile picture of Jane Doe" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAjGb7F4VJUipo5HarK0ZDfzr7ppRBhKrnmx9fvj18g6M3SCBU6QPyO5VkcW13uNsm-XND5LXeg7hPoOS-Vzx2f3UB5GPX3iN3Rznmn6DehmESpP9dcViEkLTXGgp_Uj35njdlNbzSmcr5hBmRsDKwQzK_X78nk9KjX2bvhU5ggH9m5JBCN9EJQeWqG1PSeptG4XSKwc1dWdOVNQVbu8Qp8_yyI1VfAWiHo06eS5K6levwATOXMM4Ld5YA5jW0u47rTpVHJO24-5-4");'></div>
+<div class="flex flex-col items-center justify-center">
+<p class="text-2xl font-bold leading-tight tracking-[-0.015em] text-center text-text-primary-light dark:text-text-primary-dark">Jane Doe</p>
+<p class="text-base font-normal leading-normal text-center text-text-secondary-light dark:text-text-secondary-dark mt-1">Spouse</p>
+</div>
+</div>
+<!-- Personal Information Section -->
+<div class="mt-6">
+<h2 class="text-lg font-bold leading-tight tracking-[-0.015em] px-1 pb-2 pt-2 text-text-primary-light dark:text-text-primary-dark">Personal Information</h2>
+<div class="flex flex-col gap-px overflow-hidden rounded-lg bg-transparent">
+<div class="flex items-center justify-between gap-4 bg-card-light dark:bg-card-dark p-4 min-h-[3.5rem]">
+<div class="flex items-center gap-4">
+<div class="flex size-10 shrink-0 items-center justify-center rounded-lg bg-icon-bg-light dark:bg-icon-bg-dark">
+<span class="material-symbols-outlined text-text-primary-light dark:text-text-primary-dark">cake</span>
+</div>
+<p class="flex-1 truncate text-base font-normal leading-normal text-text-primary-light dark:text-text-primary-dark">Date of Birth</p>
+</div>
+<div class="shrink-0">
+<p class="text-base font-normal leading-normal text-text-secondary-light dark:text-text-secondary-dark">August 23, 1985</p>
+</div>
+</div>
+<div class="flex items-center justify-between gap-4 bg-card-light dark:bg-card-dark p-4 min-h-[3.5rem]">
+<div class="flex items-center gap-4">
+<div class="flex size-10 shrink-0 items-center justify-center rounded-lg bg-icon-bg-light dark:bg-icon-bg-dark">
+<span class="material-symbols-outlined text-text-primary-light dark:text-text-primary-dark">transgender</span>
+</div>
+<p class="flex-1 truncate text-base font-normal leading-normal text-text-primary-light dark:text-text-primary-dark">Gender</p>
+</div>
+<div class="shrink-0">
+<p class="text-base font-normal leading-normal text-text-secondary-light dark:text-text-secondary-dark">Female</p>
+</div>
+</div>
+<div class="flex items-center justify-between gap-4 bg-card-light dark:bg-card-dark p-4 min-h-[3.5rem]">
+<div class="flex items-center gap-4">
+<div class="flex size-10 shrink-0 items-center justify-center rounded-lg bg-icon-bg-light dark:bg-icon-bg-dark">
+<span class="material-symbols-outlined text-text-primary-light dark:text-text-primary-dark">call</span>
+</div>
+<p class="flex-1 truncate text-base font-normal leading-normal text-text-primary-light dark:text-text-primary-dark">Phone Number</p>
+</div>
+<div class="shrink-0">
+<p class="text-base font-normal leading-normal text-text-secondary-light dark:text-text-secondary-dark">(555) 123-4567</p>
+</div>
+</div>
+<div class="flex items-center justify-between gap-4 bg-card-light dark:bg-card-dark p-4 min-h-[3.5rem]">
+<div class="flex items-center gap-4">
+<div class="flex size-10 shrink-0 items-center justify-center rounded-lg bg-icon-bg-light dark:bg-icon-bg-dark">
+<span class="material-symbols-outlined text-text-primary-light dark:text-text-primary-dark">mail</span>
+</div>
+<p class="flex-1 truncate text-base font-normal leading-normal text-text-primary-light dark:text-text-primary-dark">Email Address</p>
+</div>
+<div class="shrink-0">
+<p class="text-base font-normal leading-normal text-text-secondary-light dark:text-text-secondary-dark">jane.d@email.com</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Medical Information Section -->
+<div class="mt-6">
+<h2 class="text-lg font-bold leading-tight tracking-[-0.015em] px-1 pb-2 pt-2 text-text-primary-light dark:text-text-primary-dark">Medical Information</h2>
+<div class="flex flex-col gap-px overflow-hidden rounded-lg bg-transparent">
+<div class="flex items-center justify-between gap-4 bg-card-light dark:bg-card-dark p-4 min-h-[3.5rem]">
+<div class="flex items-center gap-4">
+<div class="flex size-10 shrink-0 items-center justify-center rounded-lg bg-icon-bg-light dark:bg-icon-bg-dark">
+<span class="material-symbols-outlined text-text-primary-light dark:text-text-primary-dark">allergy</span>
+</div>
+<p class="flex-1 truncate text-base font-normal leading-normal text-text-primary-light dark:text-text-primary-dark">Known Allergies</p>
+</div>
+<div class="shrink-0">
+<p class="text-base font-normal leading-normal text-text-secondary-light dark:text-text-secondary-dark">Peanuts, Penicillin</p>
+</div>
+</div>
+<div class="flex items-center justify-between gap-4 bg-card-light dark:bg-card-dark p-4 min-h-[3.5rem]">
+<div class="flex items-center gap-4">
+<div class="flex size-10 shrink-0 items-center justify-center rounded-lg bg-icon-bg-light dark:bg-icon-bg-dark">
+<span class="material-symbols-outlined text-text-primary-light dark:text-text-primary-dark">bloodtype</span>
+</div>
+<p class="flex-1 truncate text-base font-normal leading-normal text-text-primary-light dark:text-text-primary-dark">Blood Type</p>
+</div>
+<div class="shrink-0">
+<p class="text-base font-normal leading-normal text-text-secondary-light dark:text-text-secondary-dark">O+</p>
+</div>
+</div>
+<div class="flex items-center justify-between gap-4 bg-card-light dark:bg-card-dark p-4 min-h-[3.5rem]">
+<div class="flex items-center gap-4">
+<div class="flex size-10 shrink-0 items-center justify-center rounded-lg bg-icon-bg-light dark:bg-icon-bg-dark">
+<span class="material-symbols-outlined text-text-primary-light dark:text-text-primary-dark">stethoscope</span>
+</div>
+<p class="flex-1 truncate text-base font-normal leading-normal text-text-primary-light dark:text-text-primary-dark">Primary Physician</p>
+</div>
+<div class="shrink-0">
+<p class="text-base font-normal leading-normal text-text-secondary-light dark:text-text-secondary-dark">Dr. Evelyn Reed</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Emergency Information Section -->
+<div class="mt-6">
+<h2 class="text-lg font-bold leading-tight tracking-[-0.015em] px-1 pb-2 pt-2 text-text-primary-light dark:text-text-primary-dark">Emergency Information</h2>
+<div class="flex flex-col gap-px overflow-hidden rounded-lg bg-transparent">
+<div class="flex items-center justify-between gap-4 bg-card-light dark:bg-card-dark p-4 min-h-[3.5rem]">
+<div class="flex items-center gap-4">
+<div class="flex size-10 shrink-0 items-center justify-center rounded-lg bg-icon-bg-light dark:bg-icon-bg-dark">
+<span class="material-symbols-outlined text-text-primary-light dark:text-text-primary-dark">contact_emergency</span>
+</div>
+<p class="flex-1 truncate text-base font-normal leading-normal text-text-primary-light dark:text-text-primary-dark">Emergency Contact</p>
+</div>
+<div class="shrink-0">
+<p class="text-base font-normal leading-normal text-green-600 dark:text-green-400">Set Up</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Remove Member Button -->
+<div class="mt-12">
+<button class="flex h-12 w-full items-center justify-center rounded-lg bg-transparent px-6 text-base font-semibold text-destructive transition-colors hover:bg-destructive/10">Remove Member</button>
+</div>
+</main>
+</div>
+</body></html>

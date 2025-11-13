@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>TrustNet Health+ Live Chat</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#007AFF",
+                        "background-light": "#F8F9FA",
+                        "background-dark": "#111621",
+                        "agent-bubble-light": "#E9ECEF",
+                        "agent-bubble-dark": "#2a323f",
+                        "text-light": "#333333",
+                        "text-dark": "#E5E7EB",
+                        "text-muted-light": "#6c757d",
+                        "text-muted-dark": "#9CA3AF"
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex h-screen max-h-screen w-full flex-col group/design-root overflow-hidden">
+<!-- Header Bar -->
+<header class="flex items-center bg-background-light dark:bg-background-dark border-b border-gray-200 dark:border-gray-700 p-4 shadow-sm z-10 shrink-0">
+<button class="flex items-center justify-center p-2 text-text-light dark:text-text-dark">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<div class="flex flex-col flex-1 ml-4">
+<h2 class="text-text-light dark:text-text-dark text-lg font-bold leading-tight tracking-tight">Support Agent</h2>
+<div class="flex items-center gap-1.5">
+<div class="size-2 rounded-full bg-green-500"></div>
+<p class="text-green-500 text-sm font-medium">Online</p>
+</div>
+</div>
+<button class="flex items-center justify-center p-2 text-primary">
+<span class="material-symbols-outlined">call_end</span>
+</button>
+</header>
+<!-- Chat Body -->
+<main class="flex-1 overflow-y-auto p-4 space-y-6">
+<!-- System Message -->
+<div class="text-center text-xs text-text-muted-light dark:text-text-muted-dark uppercase font-semibold">Today</div>
+<!-- Agent Message -->
+<div class="flex items-end gap-3">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full w-8 h-8 shrink-0" data-alt="Support agent avatar, abstract gradient" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCX9Ir-vIyFtVyrR-_d1QoMVV9D6cdiQkgso0Iabs5Duopm2PRyTEZ5kKYXEdNp_79EwkRZwFHjv19k17vkbbrOBAM0C_8n96mA3v_9OD7dFm_3lFt8cDNWqrIAgzDPEL2choRtOCBsqrHKS5aJWDutICsA15E5eaWYZafwMNpdHfhGE5eRRXgXxr-nIMqgfQdmL-kwMOrJanNIgLLnyX0dRX_QpbfeF6MBrNMd_Kc4_vMVFpRzU5QJaYk-mphSC8995f4RIJlLtsc');"></div>
+<div class="flex flex-col gap-1 items-start">
+<div class="text-base font-normal leading-normal flex max-w-[360px] rounded-xl rounded-bl-none px-4 py-3 bg-agent-bubble-light dark:bg-agent-bubble-dark text-text-light dark:text-text-dark">
+                        You are now connected with a support agent. How can we help you today?
+                    </div>
+<p class="text-text-muted-light dark:text-text-muted-dark text-xs font-normal leading-normal">10:30 AM</p>
+</div>
+</div>
+<!-- User Message -->
+<div class="flex items-end gap-3 justify-end">
+<div class="flex flex-col gap-1 items-end">
+<div class="text-base font-normal leading-normal flex max-w-[360px] rounded-xl rounded-br-none px-4 py-3 bg-primary text-white">
+                        Hi, I'm having an issue with my recent appointment booking.
+                    </div>
+<p class="text-text-muted-light dark:text-text-muted-dark text-xs font-normal leading-normal">10:31 AM</p>
+</div>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full w-8 h-8 shrink-0" data-alt="User avatar, abstract gradient" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA74KXVeoToQyr2wee5THevCzr7rLoUOHsEVBNBZSWzl9sZV_6pKTq6BDZZya5OkQ1417z3zNlwooUFa8OMWN_Glf05528bhSDaSoYlCNpgWLJyxRGpcaeEEKf6QV8ZvZYqBe8pARO1K7LdTi-nHYTD72dd6FoEAoMbiEr_ETU36eqpkNvHAld2VqGF77Fg4hN-Ip8uyZjGPEiez_ybsVQrqx8uKQCDIzueqxVvJtnvgcsgdBxws5qUEh3MnQC8TvsX6sdUyw6MYN0');"></div>
+</div>
+<!-- Agent Message -->
+<div class="flex items-end gap-3">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full w-8 h-8 shrink-0" data-alt="Support agent avatar, abstract gradient" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDnl4n1uaJZ3ZQ7jtlV0FAq0Z2qZC5nfQrPXd8TUCEYAlmhXVzpZi455UtUpr6SElkTo9X32c7Y4uwMUq_r2J3aIihK5j6QOoufycmaxZKa2UmjCbi0YU5RLuIKObwo2rHa5BYhM-kyBEFas3C7lpW6QNCooR6bPIPWAbZfbUj5Px22WsBnhaetgcUxd27wiJQxAi2dd_PwuDHko2Mr4xV6ZSryxZVPTgeJRu1YSePgxjahJSGeplPMy_YBv20ECUWy4-E0-YOXylU');"></div>
+<div class="flex flex-col gap-1 items-start">
+<div class="text-base font-normal leading-normal flex max-w-[360px] rounded-xl rounded-bl-none px-4 py-3 bg-agent-bubble-light dark:bg-agent-bubble-dark text-text-light dark:text-text-dark">
+                        I'm sorry to hear that. Could you please provide the appointment ID or the doctor's name?
+                    </div>
+<p class="text-text-muted-light dark:text-text-muted-dark text-xs font-normal leading-normal">10:31 AM</p>
+</div>
+</div>
+<!-- Agent Typing Indicator -->
+<div class="flex items-end gap-3">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full w-8 h-8 shrink-0" data-alt="Support agent avatar, abstract gradient" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAkZUbenf_lDQ-jrrLVDTDTIDPqpe0J2c6zFL5HQfcazWX3mwJX6ZjpbsbBIl3VsrnXr3nzj1KBap07JM4ugp00M-dj25ejDKn-tvDlMmnpw1rOnmcQE_goayXxFTu7vAVCfBfJ_Mza4UF4CMvKZXk6amTIRCL34J3b9F2iwKbXm_rfQelCbs_v3bmhI3LDj4GOQWkAbDb58FGqr_1CTlguzywjEk47UPaEUqEtx5Nr3n2kwtKS5rZMwFfT8CqKOus1vm-VCAxu8FI');"></div>
+<div class="flex flex-col gap-1 items-start">
+<div class="text-base font-normal leading-normal flex max-w-[360px] rounded-xl rounded-bl-none px-4 py-3 bg-agent-bubble-light dark:bg-agent-bubble-dark text-text-light dark:text-text-dark">
+<div class="flex items-center space-x-1">
+<span class="size-2 bg-gray-400 dark:bg-gray-500 rounded-full animate-pulse [animation-delay:-0.3s]"></span>
+<span class="size-2 bg-gray-400 dark:bg-gray-500 rounded-full animate-pulse [animation-delay:-0.15s]"></span>
+<span class="size-2 bg-gray-400 dark:bg-gray-500 rounded-full animate-pulse"></span>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Input Footer -->
+<footer class="flex items-center p-3 gap-3 bg-background-light dark:bg-background-dark border-t border-gray-200 dark:border-gray-700 shrink-0">
+<button class="flex items-center justify-center p-2 shrink-0 text-text-muted-light dark:text-text-muted-dark hover:text-primary">
+<span class="material-symbols-outlined text-2xl">add_circle</span>
+</button>
+<label class="flex flex-col min-w-40 flex-1">
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-full text-text-light dark:text-text-dark focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-gray-300 dark:border-gray-600 bg-background-light dark:bg-background-dark h-11 placeholder:text-text-muted-light dark:placeholder:text-text-muted-dark px-4 text-base font-normal leading-normal" placeholder="Type your message..." value=""/>
+</label>
+<button class="flex items-center justify-center size-11 shrink-0 rounded-full bg-primary text-white disabled:bg-gray-300 dark:disabled:bg-gray-600 disabled:text-gray-500">
+<span class="material-symbols-outlined text-2xl">send</span>
+</button>
+</footer>
+</div>
+</body></html>
